@@ -1,0 +1,19 @@
+project:
+  type: book
+
+book:
+  title: "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio"
+  author: "Andrés Pereira / OPS"
+  chapters:
+    - index.qmd
+    - modulo1.qmd
+    - modulo2.qmd
+    - modulo3.qmd
+    - modulo4.qmd
+    - modulo5.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true

@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "",
+    "text": "0.1 Looker Studio\nLooker Studio es la herramienta de Google para crear informes y tableros interactivos (dashboards)\nEsta herramienta tiene la ventaja de estar subida a una cuenta de google para visualizar datos, combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes en tiempo real. Para mas información consulta en la página. https://docs.cloud.google.com/looker/docs/studio?hl=es.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
+    "href": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
+    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "0.2 Utilidad de esta herramienta para la vigilancia epidemiológica",
+    "text": "0.2 Utilidad de esta herramienta para la vigilancia epidemiológica\nEl uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos, visualización de información y elaboración de tableros interactivos.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contenido",
+    "href": "index.html#contenido",
+    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "0.3 Contenido",
+    "text": "0.3 Contenido\n\nIntroducción a los tableros de vigilancia epidemiológica\nBuenas prácticas en el desarrollo de proyectos.\nFundamentos de Google Sheets para el procesamiento de datos\nInterfaz de Looker Studio y visualizaciones\nIntegración, interactividad y configuración del tablero.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  }
+]

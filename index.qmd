@@ -1,0 +1,38 @@
+---
+title: "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio"
+subtitle: "Herramientas para la vigilancia epidemiológica"
+author: "Andrés Pereira"
+format: html
+theme: cosmo
+toc: true
+toc-depth: 2
+code-tools: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
+---
+
+## Looker Studio
+
+Looker Studio es la herramienta de Google para crear informes y tableros interactivos (dashboards)
+
+Esta herramienta tiene la ventaja de estar subida a una cuenta de google para visualizar datos, combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes en tiempo real. Para mas información consulta en la página. <https://docs.cloud.google.com/looker/docs/studio?hl=es>.
+
+## Utilidad de esta herramienta para la vigilancia epidemiológica
+
+El uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos, visualización de información y elaboración de tableros interactivos.
+
+## Contenido
+
+1.  Introducción a los tableros de vigilancia epidemiológica
+
+2.  Buenas prácticas en el desarrollo de proyectos.
+
+3.  Fundamentos de Google Sheets para el procesamiento de datos
+
+4.  Interfaz de Looker Studio y visualizaciones
+
+5.  Integración, interactividad y configuración del tablero.
