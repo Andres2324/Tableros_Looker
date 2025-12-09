@@ -1,5 +1,44 @@
 ---
-title: "Modulo 1"
-author: "Andrés Pereira"
-editor: visual
+title: "Modulo 1: Buenas prácticas en el desarrollo de proyectos.  "
+toc: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
 ---
+
+## Documentación para el desarrollo de proyectos
+
+La documentación hace referencia a todo documento que acompaña el proyecto de tablero interactivo y que permite recopilar información técnica (de las herramientas utilizadas), metodológica (de desisiones vinculadas al procesamiento de los datos y su visualización), de contexto epidemiológico (fundamentación de acuerdo a las estrategias de vigilancia y el marco espacio-temporal) y de tipo operativo (instrucciones para el funcionamiento y la actualización)
+
+En el marco de un proyecto de tablero interactivo que automatiza el procesamiento y la visualizacción de datos es fundamental contar con una buena documentación por varios motivos: 
+
+-   **Facilita la colaboración entre participantes del proyectos**
+
+-   **Reduce errores en el desarrollo y mantenimiento**
+
+-   **Agiliza la incorporación de nuevos miembros al equipo y nuevos elementos en el tablero**
+
+-   **Asegura la continuidad del proyecto, su reproductibilidad y mejora la experiencia del usuario** 
+
+-   **Proporciona una guía clara sobre cómo funciona el proyecto, garantizando la calidad y escalabilidad a largo plazo.** 
+
+## Plan de análisis
+
+Los tableros interactivos permiten la visualización de información sanitaria. Esta visualización supone un procesamiento, una serie de acciones sobre los datos, para la producción de la información a partir de la vigilancia epidemiológica.
+
+En este sentido el plan de análisis es un documento escrito que acompaña al proyecto, y que explicita las principales desiciones metodológicas y opertaivas utilizadas para el diseño del tablero interactivo.
+
+En este sentido este documento permite registrar una serie de elementos que guardan una coherencia entre sí, que serán útiles para la continuidad del proyecto y qué permiten comprender como fue el proceso de armado del mismo.
+
+Si bien puede armarse de distintas formas, algunos de los elementos típicos de un plan de análisis son:
+
+-   Introducción: Propósito y Justificación del proyecto. Definición de los eventos y las estrategias de vigilancia epidemiológica. Definición de usos principales, perfil de usuario y detinatarios.
+
+-   Objetivos: Definición de objetivos generales y específicos del proyecto
+
+-   Metodología: Período de análisis. Unidad de análisis. Criterios de inclusión y exclusión. Definición operativa y clasificación de variables. Fuentes de datos. Porcesamiento y limpieza de los datos. Indicadores y visualizaciones.
+
+-   Resultados esperados: Tiempo y lógica de actualización de los datos.

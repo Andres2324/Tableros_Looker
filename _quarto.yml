@@ -2,7 +2,7 @@ project:
   type: book
 
 book:
-  title: "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio"
+  title: "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio"
   author: "Andrés Pereira / OPS"
   chapters:
     - index.qmd
@@ -14,6 +14,13 @@ book:
 
 format:
   html:
-    theme: cosmo
-    toc: true
-    number-sections: true
+    embed-resources: true # esto no debe modificarse nunca
+    published-title: "Fecha:"  # Cambia "Published" por "Fecha"
+    author-title: 
+    toc: true                # Habilita la tabla de contenidos
+    toc-title: "Índice de Contenidos"  # Título del índice
+    toc-depth: 3             # Nivel de profundidad del índice (hasta h3)
+    toc-location: left       # Ubicación del índice (izquierda)
+    code-tools: false
+    number-sections: false
+    css: styles.css 

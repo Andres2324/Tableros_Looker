@@ -1,4 +1,42 @@
 ---
-title: "Modulo 2"
-editor: visual
+title: "Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica"
+toc: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
 ---
+
+## Diseño y maquetación de tableros interactivos en Looker Studio
+
+Para el diseño del tablero en Looker Studio, tomando en cuenta que son herramientas que permiten consolidar información, es recomendable previamente a procesar los datos diseñar las visualizaciones y elementos que queremos que esten visibiles.
+
+Para lograr un tablero comprensible, es imporntante seleccionar bien el contenido, las visualizaciones y la estética que queremos lograr.
+
+Para ello es necesario crear una cuenta en Looker Studio con una cuenta de correo en gmail es suficiente.
+
+![](imagenes/looker usuario.png)
+
+Haciendo click en Informe vacío es posible crear un proyecto nuevo y editarlo. A su vez también se puede compartir y otorgar permisos a otros usuarios de Looker Studio para editar o solo para acceder a la visualización del tablero.
+
+![](imagenes/looker editar.png)
+
+Además de los gráficos, tablas, es posible insertar imagenes, texto, formas entre otros elementos típicos de procesadaores de texto y que pueden utilizarse desde el menú.
+
+![](imagenes/menu texto.png)
+
+Estos son algunos de los elementos típicos de los tableros en Looker Studio que podemos incorporar:
+
+-   **Hojas del tablero:** Puede incoporarse hojas al tablero permitiendo al usuario explorar las distintas visualizaciones e indicadores seleccionados. En esta dirección es útil definir el criterio que agrupa los datos por hoja. Por ejemplo: Datos provenientes de disintos efectores de salud o distintos eventos de notificación obligatoria. También es buena práctica colocar en la primer hoja un instructivo para la exploración del tablero, explicitar las fuentes de los datos y colocar un índice.
+
+-   **Fecha de actualización:** Puede colocarse con un "cuadro de resultados" para automatizar la fecha de actualización considerando el valor máximo de una columna en formato fecha de nuestra base de datos.
+
+-   **Título:** El título puede colocarse de manera intuitiva como si fuera un procesador de texto de Google Docs. Se puede editar su color, fondo, formato, insertar imágenes, entre otros recursos. Mas allá del diseño corresponde en el título poder explicitar desde que institución fue producido
+
+![](imagenes/1 Tablero para index.png)
+
+La automatización de los datos en títulos y subtítulos, frecuencias absolutas (n) y relativas (%) es una buena práctica para evitar la actualización manual de los datos en el tablero.
+
+La prefiguración del tablero permite identificar el procesamiento de los datos que necesitamos realizar para alcanzar esas visualizaciones.

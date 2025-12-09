@@ -2,31 +2,71 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
     "section": "",
-    "text": "0.1 Looker Studio\nLooker Studio es la herramienta de Google para crear informes y tableros interactivos (dashboards)\nEsta herramienta tiene la ventaja de estar subida a una cuenta de google para visualizar datos, combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes en tiempo real. Para mas información consulta en la página. https://docs.cloud.google.com/looker/docs/studio?hl=es.",
+    "text": "Bienvenidos al curso de autoadministrado de Looker Studio\nLooker Studio1 es una herramienta de Google para crear informes y tableros interactivos (dashboards). Estas herramientas permiten procesar datos y construir visualizaciones interactivas sin la necesidad de escribir en algún lenguaje de programación de manera gratuita y accesible.\nPor otro lado permiten una integración nativa con las planillas de Google Sheets, útil en el caso de trabajo con planillas de vigilancia epidemiológicas colaborativas en Google Drive.\nEsta herramienta tiene la ventaja de estar subida a una cuenta de google y puede combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes de actualización automática.\nSi bien en su versión gratuita presenta límites en su actualización, tiene un buen rendimiento con dataset pequeños y medianos (&gt; de 100.000 filas). A su vez, se requiere el procesamiento de los datos previamente para que el tablero funcione sin errores. En esta dirección el armado de los inputs del tablero, bases de datos enlazadas con el tablero, es un paso necesario para un óptimo funcionamiento.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
     ]
   },
   {
     "objectID": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
     "href": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
-    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
-    "section": "0.2 Utilidad de esta herramienta para la vigilancia epidemiológica",
-    "text": "0.2 Utilidad de esta herramienta para la vigilancia epidemiológica\nEl uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos, visualización de información y elaboración de tableros interactivos.",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "Utilidad de esta herramienta para la vigilancia epidemiológica",
+    "text": "Utilidad de esta herramienta para la vigilancia epidemiológica\nEl uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos y visualización de información producida a partir de la vigilancia epidemiológica.\nLa realización de un tablero, como proyecto supone la revisión de los circuitos de la producción del dato epidemiológico, de laboratorio, clínica, etc. En este sentido, embarcarse en el desarrollo de este tipo de proyectos, resulta una buena oportunidad para la revisión de las prácticas y de la calidad del dato por parte de los equipos que realizan la vigilancia epidemiológica a nivel jurisdiccional o en un efector de salud.\n\nAl tratarse de datos producidos en el marco de la vigilancia epidemiológica es un paso fundamental la anonimización de los datos sensibles y todo aquello dato que permita identificar a cualquier usuario del sistema de salud.\nEl armado del tablero también supone la definición de perfiles de usuario, en esta línea debe definirse si se trata de un tablero para usuarios/as del sistema de salud, para equipos de salud que realizan asistencia, para equipos de gestión en sus distintos niveles, etc.\nTomando en cuenta estos elementos, a lo largo del curso, vamos a ir recorriendo los pasos necesarios para la elaboración de un proyecto y el diseño de un tablero interactivo funcional usando Looker Studio.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
     ]
   },
   {
-    "objectID": "index.html#contenido",
-    "href": "index.html#contenido",
-    "title": "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio",
-    "section": "0.3 Contenido",
-    "text": "0.3 Contenido\n\nIntroducción a los tableros de vigilancia epidemiológica\nBuenas prácticas en el desarrollo de proyectos.\nFundamentos de Google Sheets para el procesamiento de datos\nInterfaz de Looker Studio y visualizaciones\nIntegración, interactividad y configuración del tablero.",
+    "objectID": "index.html#contenidos-del-curso",
+    "href": "index.html#contenidos-del-curso",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "Contenidos del curso",
+    "text": "Contenidos del curso\nLos contenidos de este curso autoadministrado están organizados de manera secuencial, proponiendo ejercicios para cada paso en la realización de un tablero interactivo, sus inputs y su documentación necesaria para actualizar.\n\nMódulo 1: Buenas prácticas en el desarrollo de proyectos. Plan de análisis y guía operativa.\nModulo 2: Introducción a los tableros interactivos para la vigilancia epidemiológica\nModulo 3: Fundamentos de Google Sheets para el procesamiento de datos\nModulo 4: Interfaz de Looker Studio y visualizaciones\nModulo 5: Integración, interactividad y configuración del tablero.",
     "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso Auto administrado para el diseño de tableros interactivos con Looker Studio</span>"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "",
+    "text": "https://docs.cloud.google.com/looker/docs/studio?hl=es.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html",
+    "href": "modulo1.html",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "",
+    "text": "Documentación para el desarrollo de proyectos\nLa documentación hace referencia a todo documento que acompaña el proyecto de tablero interactivo y que permite recopilar información técnica (de las herramientas utilizadas), metodológica (de desisiones vinculadas al procesamiento de los datos y su visualización), de contexto epidemiológico (fundamentación de acuerdo a las estrategias de vigilancia y el marco espacio-temporal) y de tipo operativo (instrucciones para el funcionamiento y la actualización)\nEn el marco de un proyecto de tablero interactivo que automatiza el procesamiento y la visualizacción de datos es fundamental contar con una buena documentación por varios motivos:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html#documentación-para-el-desarrollo-de-proyectos",
+    "href": "modulo1.html#documentación-para-el-desarrollo-de-proyectos",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "",
+    "text": "Facilita la colaboración entre participantes del proyectos\nReduce errores en el desarrollo y mantenimiento\nAgiliza la incorporación de nuevos miembros al equipo y nuevos elementos en el tablero\nAsegura la continuidad del proyecto, su reproductibilidad y mejora la experiencia del usuario \nProporciona una guía clara sobre cómo funciona el proyecto, garantizando la calidad y escalabilidad a largo plazo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html#plan-de-análisis",
+    "href": "modulo1.html#plan-de-análisis",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "Plan de análisis",
+    "text": "Plan de análisis\nLos tableros interactivos permiten la visualización de información sanitaria. Esta visualización supone un procesamiento, una serie de acciones sobre los datos, para la producción de la información a partir de la vigilancia epidemiológica.\nEn este sentido el plan de análisis es un documento escrito que acompaña al proyecto, y que explicita las principales desiciones metodológicas y opertaivas utilizadas para el diseño del tablero interactivo.\nEn este sentido este documento permite registrar una serie de elementos que guardan una coherencia entre sí, que serán útiles para la continuidad del proyecto y qué permiten comprender como fue el proceso de armado del mismo.\nSi bien puede armarse de distintas formas, algunos de los elementos típicos de un plan de análisis son:\n\nIntroducción: Propósito y Justificación del proyecto. Definición de los eventos y las estrategias de vigilancia epidemiológica. Definición de usos principales, perfil de usuario y detinatarios.\nObjetivos: Definición de objetivos generales y específicos del proyecto\nMetodología: Período de análisis. Unidad de análisis. Criterios de inclusión y exclusión. Definición operativa y clasificación de variables. Fuentes de datos. Porcesamiento y limpieza de los datos. Indicadores y visualizaciones.\nResultados esperados: Tiempo y lógica de actualización de los datos.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
     ]
   }
 ]

@@ -1,12 +1,8 @@
 ---
-title: "Curso Auto administrado para el diseño de tableros interactivos con Looker Studio"
+title: "Curso autoadministrado para el diseño de tableros interactivos con Looker Studio"
 subtitle: "Herramientas para la vigilancia epidemiológica"
 author: "Andrés Pereira"
 format: html
-theme: cosmo
-toc: true
-toc-depth: 2
-code-tools: false
 df-print: paged
 smooth-scroll: true
 execute:
@@ -15,24 +11,42 @@ execute:
   message: false
 ---
 
-## Looker Studio
+## Bienvenidos al curso de autoadministrado de Looker Studio
 
-Looker Studio es la herramienta de Google para crear informes y tableros interactivos (dashboards)
+Looker Studio[^index-1] es una herramienta de Google para crear informes y tableros interactivos (dashboards). Estas herramientas permiten procesar datos y construir visualizaciones interactivas sin la necesidad de escribir en algún lenguaje de programación de manera gratuita y accesible.
 
-Esta herramienta tiene la ventaja de estar subida a una cuenta de google para visualizar datos, combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes en tiempo real. Para mas información consulta en la página. <https://docs.cloud.google.com/looker/docs/studio?hl=es>.
+[^index-1]: [https://docs.cloud.google.com/looker/docs/studio?hl=es](#0){.uri}.
+
+Por otro lado permiten una integración nativa con las planillas de Google Sheets, útil en el caso de trabajo con planillas de vigilancia epidemiológicas colaborativas en Google Drive.
+
+Esta herramienta tiene la ventaja de estar subida a una cuenta de google y puede combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes de actualización automática.
+
+Si bien en su versión gratuita presenta límites en su actualización, tiene un buen rendimiento con dataset pequeños y medianos (\> de 100.000 filas). A su vez, se requiere el procesamiento de los datos previamente para que el tablero funcione sin errores. En esta dirección el armado de los inputs del tablero, bases de datos enlazadas con el tablero, es un paso necesario para un óptimo funcionamiento.
 
 ## Utilidad de esta herramienta para la vigilancia epidemiológica
 
-El uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos, visualización de información y elaboración de tableros interactivos.
+El uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos y visualización de información producida a partir de la vigilancia epidemiológica.
 
-## Contenido
+La realización de un tablero, como proyecto supone la revisión de los circuitos de la producción del dato epidemiológico, de laboratorio, clínica, etc. En este sentido, embarcarse en el desarrollo de este tipo de proyectos, resulta una buena oportunidad para la revisión de las prácticas y de la calidad del dato por parte de los equipos que realizan la vigilancia epidemiológica a nivel jurisdiccional o en un efector de salud.
 
-1.  Introducción a los tableros de vigilancia epidemiológica
+![](imagenes/Tablero.png)
 
-2.  Buenas prácticas en el desarrollo de proyectos.
+Al tratarse de datos producidos en el marco de la vigilancia epidemiológica es un paso fundamental la anonimización de los datos sensibles y todo aquello dato que permita identificar a cualquier usuario del sistema de salud.
 
-3.  Fundamentos de Google Sheets para el procesamiento de datos
+El armado del tablero también supone la definición de perfiles de usuario, en esta línea debe definirse si se trata de un tablero para usuarios/as del sistema de salud, para equipos de salud que realizan asistencia, para equipos de gestión en sus distintos niveles, etc.
 
-4.  Interfaz de Looker Studio y visualizaciones
+Tomando en cuenta estos elementos, a lo largo del curso, vamos a ir recorriendo los pasos necesarios para la elaboración de un proyecto y el diseño de un tablero interactivo funcional usando Looker Studio.
 
-5.  Integración, interactividad y configuración del tablero.
+## Contenidos del curso
+
+Los contenidos de este curso autoadministrado están organizados de manera secuencial, proponiendo ejercicios para cada paso en la realización de un tablero interactivo, sus inputs y su documentación necesaria para actualizar.
+
+1.  Módulo 1: Buenas prácticas en el desarrollo de proyectos. Plan de análisis y guía operativa.
+
+2.  Modulo 2: Introducción a los tableros interactivos para la vigilancia epidemiológica
+
+3.  Modulo 3: Fundamentos de Google Sheets para el procesamiento de datos
+
+4.  Modulo 4: Interfaz de Looker Studio y visualizaciones
+
+5.  Modulo 5: Integración, interactividad y configuración del tablero.
