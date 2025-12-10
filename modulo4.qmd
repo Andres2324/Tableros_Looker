@@ -1,5 +1,10 @@
 ---
-title: "Modulo 4"
-author: "Andrés Pereira"
-editor: visual
+title: "Modulo 3. Interfaz de Looker Studio y visualizaciones"
+toc: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
 ---

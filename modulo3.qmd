@@ -1,5 +1,12 @@
 ---
-title: "Modulo 3"
-author: "Andrés Pereira"
-editor: visual
+title: "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos"
+toc: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
 ---
+
+## Bases de datos en google sheets

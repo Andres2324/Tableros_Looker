@@ -1,5 +1,10 @@
 ---
-title: "Modulo 5"
-author: "Andrés Pereira"
-editor: visual
+title: "Modulo 5.Integración, interactividad y configuración del tablero"
+toc: false
+df-print: paged
+smooth-scroll: true
+execute:
+  echo: true
+  warning: false
+  message: false
 ---
