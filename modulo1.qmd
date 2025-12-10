@@ -39,6 +39,6 @@ Si bien puede armarse de distintas formas, algunos de los elementos típicos de 
 
 -   Objetivos: Definición de objetivos generales y específicos del proyecto
 
--   Metodología: Período de análisis. Unidad de análisis. Criterios de inclusión y exclusión. Definición operativa y clasificación de variables. Fuentes de datos. Porcesamiento y limpieza de los datos. Indicadores y visualizaciones.
+-   Metodología: Período de análisis. Unidad de análisis. Criterios de inclusión y exclusión. Definición operativa y clasificación de variables. Fuentes de datos. Procesamiento y limpieza de los datos. Indicadores y visualizaciones.
 
 -   Resultados esperados: Tiempo y lógica de actualización de los datos.
