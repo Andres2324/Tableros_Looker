@@ -88,5 +88,15 @@
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica</span>"
     ]
+  },
+  {
+    "objectID": "modulo3.html",
+    "href": "modulo3.html",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "",
+    "text": "Bases de datos en google sheets",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
   }
 ]
