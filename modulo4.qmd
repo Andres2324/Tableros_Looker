@@ -1,5 +1,5 @@
 ---
-title: "Modulo 3. Interfaz de Looker Studio y visualizaciones"
+title: "Modulo 4. Interfaz de Looker Studio y visualizaciones"
 toc: false
 df-print: paged
 smooth-scroll: true
@@ -8,3 +8,117 @@ execute:
   warning: false
   message: false
 ---
+
+## Características para el diseño de un tablero efectivo para la vigilancia epidemiológica
+
+Los tableros (dashboards) en general, como vimos en modulos anteriores, son herramientas visuales que agrupan y presentan información clave de una manera accesible. Estas herramientas permiten sintetizar grandes volúmenes de datos en visualizaciones claras y concisas.
+
+En el proceso de diseño, es importante tener en cuenta el plan de análisis donde se explicitan los objetivos, las desiciones metodológicas y los pasos operativos. Por ello antes de comenzar el diseño del tablero, es crucial entender qué se quiere lograr con él, ya que esto guiará el diseño y la selección de métricas (medidas de resumen) e indicadores.
+
+Algunas de sus ventajas en el campo de la vigilancia:
+
+-   Facilitan el monitoreo en tiempo real de los eventos de notificación obligatoria en salud
+
+-   Fundamentales para la gestión sanitaria y la toma de desiciones informada
+
+-   Simplifican la comunicación de resultados
+
+## Consideraciones para el diseño
+
+Organizar la información es una clave fundamental. Debe disponerse de manera que los elementos más importantes estén al frente, utilizando un diseño jerárquico. Optimizar las visualizaciones es igualmente necesario; esto implica usar gráficos y tablas adecuadas para cada tipo de dato, como gráficos de líneas para mostrar tendencias temporales y gráficos de barras para comparaciones.
+
+A su vez, incluir elementos interactivos como filtros y segmentaciones permitirá a los usuarios explorar los datos de manera más profunda.
+
+## Principios de visualización de datos
+
+La efectividad en la visualización de datos puede guiarse por algunos principios clave. La carga cognitiva se refiere a la cantidad de esfuerzo mental que requiere procesar información nueva y compleja. En el contexto de la visualización de datos, una alta carga cognitiva puede dificultar la interpretación y comprensión de los gráficos.
+
+1.  Simplicidad: Priorizar la claridad y evitar elementos innecesarios.
+
+2.  Consistencia: Coherencia en el estilo (colores, fuentes y formatos).
+
+3.  Relevancia: Razón de ser de acuerdo a los objetivos del plan de análisis.
+
+4.  Uso de los espacios: El espacio en blanco se debe aprovechar para separar y organizar los elementos.
+
+## Para añadir gráficos
+
+Para incluir gráficos en nuestro tablero, luego de haber ya incorporado las fuentes de datos, podemos realizarlo desde el menú de nuestro proyecto.
+
+![](imagenes/añadir%20graficos.png)
+
+Como paso previo a la selección de los gráficos y visualizaciones es fundamental comprender y clasificar nuestras variables (columnas de nuestas bases de datos). En líneas generales podemos clasificar cualquier tipo de variables como categóricas y numéricos. Los gráficos que utilicemos dependen de la [clasificación de nuestras variables en Looker Studio.](https://docs.cloud.google.com/looker/docs/studio/data-types?hl=es-419)
+
+Te invitamos a explorar los [gráficos disponibles](https://docs.cloud.google.com/looker/docs/studio/types-of-charts-in-looker-studio?hl=es-419) en Looker Studio. Algunos de los mas utilizados en el campo de la vigilancia epidemiológica son:
+
+-   [Gráficos de Barras](https://docs.cloud.google.com/looker/docs/studio/bar-chart-and-column-chart-reference?hl=es-419)
+
+    ![](imagenes/grafico%20de%20barras.png)
+
+-   [Gráficos de Líneas](https://docs.cloud.google.com/looker/docs/studio/time-series-reference?hl=es-419)
+
+    ![](imagenes/grafico%20de%20lineas.png)
+
+-   [Gráficos Circular o Sectorial](https://docs.cloud.google.com/looker/docs/studio/pie-chart-reference?hl=es-419)
+
+    ![](imagenes/grafico%20circular.png)
+
+-   [Cuadro de resultados o de evaluación](https://docs.cloud.google.com/looker/docs/studio/scorecard-reference?hl=es-419)
+
+    ![](imagenes/cuadro%20de%20resultados.png)
+
+-   [Tablas de resumen](https://docs.cloud.google.com/looker/docs/studio/table-reference?hl=es-419)
+
+    ![](imagenes/tabla%20resumen.png)
+
+-   [Mapas Coropléticos o temáticos](https://docs.cloud.google.com/looker/docs/studio/geo-chart-reference?hl=es-419)
+
+    ![](imagenes/mapa%20tematico.png)
+
+## Configuración y estilo
+
+Una vez seleccionados los gráficos y las visualizaciones puede avanzarse en la configuración de cada gráfico y de su particular estilo que queremos darle. En el siguiente menú se presentan las opciones que podemos utilizar.
+
+![](imagenes/Configuracion%20y%20estilo%20de%20graficos.png)
+
+De acuedo al tipo de gráfico y de las variables seleccionadas podemos tener algunas diferencias. Sin embargo, en líneas generales estos son algunos de los elementos a tener en cuenta en la configuración.
+
+-   Fuente de datos
+
+    ![](imagenes/Fuentes%20de%20datos%20para%20grafico.png)
+
+-   Dimensión: Eje X
+
+    ![](imagenes/eje%20x%20grafico.png)
+
+-   Métrica: Eje Y
+
+    ![](imagenes/Eje%20y%20grafico.png)
+
+-   Filtrar
+
+    ![](imagenes/filtros%20grafico.png)
+
+-   Dimensión período
+
+    ![](imagenes/dimensio%20periodo%20grafico.png)
+
+-   Ordenar
+
+    ![](imagenes/ordenar%20grafico.png)
+
+En lo relativo al estilo del gráfico puede editarse distintos elementos fundamentales de cualquier gráfico: título, leyendas de los ejes, fondos y bordes, etc.
+
+![](imagenes/estilo%20grafico.png)
+
+También es posible añadir [elementos de diseño estáticos en nuestro tablero](https://docs.cloud.google.com/looker/docs/studio/add-text-images-lines-and-shapes-to-your-reports?hl=es). Estos elementos puede ayudar a organizar el espacio y facilitar la comprensión de las visualizaciones que utilicemos. A su vez puede colocarse links de acceso a otras páginas web que complementen la información que estamos presentando.
+
+![](imagenes/elementos%20para%20tableros.png)
+
+## Maquetación del tablero
+
+Además de la configuración de las visualizaciones y gráficos (incluyendo todos los elementos necesarios para su comprensión: título, leyendas, etc.), la selección de estilos a utilizar, es conveniente no perder de vista el diseño global del tablero.
+
+![](imagenes/tablero%20global.png)
+
+La combinación de visualizaciones y el diseño debe realizarse de acuerdo a nuestros objetivos planteados en el plan de análisis.

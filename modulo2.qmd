@@ -11,21 +11,56 @@ execute:
 
 ## Diseño y maquetación de tableros interactivos en Looker Studio
 
+Un tablero (dashboard) es una herramienta de visualización que presenta métricas (medidas de resumen) e indicadores en un formato gráfico y fácil de entender. Su principal objetivo es ofrecer información relevante de manera rápida, lo que permite una toma de decisiones ágil
+y fundamentada.
+
 Para el diseño del tablero en Looker Studio, tomando en cuenta que son herramientas que permiten consolidar información, es recomendable previamente a procesar los datos diseñar las visualizaciones y elementos que queremos que esten visibiles.
 
-Para lograr un tablero comprensible, es imporntante seleccionar bien el contenido, las visualizaciones y la estética que queremos lograr.
+### Componentes de un tablero
 
-Para ello es necesario crear una cuenta en Looker Studio. Con una cuenta de correo en gmail es suficiente para acceder al entorno de Looker Studio.
+Un dashboard eficaz debe contar con varios componentes clave. En primer lugar, debe incluir
+*gráficos y visualizaciones* que permitan interpretar los datos e indicadores de manera clara.
 
-![](imagenes/looker usuario.png)
+También es fundamental incorporar *filtros* e interactividad, lo que permite a los usuarios
+explorar datos y centrarse en áreas específicas. Por último, se recomienda añadir una narrativa que explique las visualizaciones y proporcione contexto a la información presentada.
+
+En este sentido para lograr un tablero comprensible, es imporntante seleccionar bien los componentes y la estética que queremos lograr tomando en cuenta los objetivos explicitados en el plan de análisis (Modulo 1).
+
+### Introducción a Looker Studio  ![](imagenes/looker.png){width="35" height="40"}
+
+Los pasos clave para poder el uso de la plataforma son:
+
+-   Conexión de datos: Es posible conectar Looker Studio a Google Sheets, Google Analytics, bases de datos SQL y otras fuentes de datos.
+
+-   Construcción de informes y reportes: Es posible crear visualizaciones acomo gráficos, tablas y mapas que se actualizan automáticamente con los datos.
+
+-   Interactividad: Una de las mayores ventajas de Looker Studio es la posibilidad de crear informes interactivos, donde los usuarios pueden filtrar y explorar los datos en tiempo real.
+
+En los siguientes links podemos explorar las posibilidades de [visualizaciones](https://lookerstudio.google.com/visualization) y de [diseño de reportes](https://lookerstudio.google.com/gallery)
+
+### Crear y configurar una cuenta
+
+Para comenzar a utilizar Looker Studio, primero debemos crear una cuenta. Aquí te explicamos cómo hacerlo:
+
+1.   Acceder a [Looker Studio](lookerstudio.google.com)
+
+2.  Iniciar sesión: Iniciar sesión con la cuenta de Google. Si no tenemos una cuenta de Google, debemos crear una.
+
+3.  Crear el perfil: Una vez dentro, se nos pedirá que completemos nuestro perfil. Esto incluye definir preferencias de uso y permisos de acceso.
+
+4.  Configurar la cuenta: Podemos personalizar diversas configuraciones, como la temática de los informes.
+
+5.  Crear un proyecto nuevo en Looker Studio
+
+![](imagenes/looker%20usuario.png)
 
 Haciendo click en Informe vacío es posible crear un proyecto nuevo y editarlo. A su vez también se puede compartir y otorgar permisos a otros usuarios de Looker Studio para editar o solo para acceder a la visualización del tablero.
 
-![](imagenes/looker editar.png)
+![](imagenes/looker%20editar.png)
 
 Además de los gráficos, tablas, es posible insertar imagenes, texto, formas (lineas, puntos, polígonos) entre otros elementos típicos de procesadores de texto y que pueden utilizarse desde el menú de manera intuitiva.
 
-![](imagenes/menu texto.png)
+![](imagenes/menu%20texto.png)
 
 Tomando en cuenta estos elementos, listamos algunos de los elementos típicos de los tableros en Looker Studio que podemos incorporar en nuestro proyecto:
 
@@ -35,10 +70,55 @@ Tomando en cuenta estos elementos, listamos algunos de los elementos típicos de
 
 -   **Título:** El título puede colocarse en el tablero como si fuera un procesador de texto de Google Docs o Google Slides, con un cuadro de texto. Se puede editar su color, fondo, formato, insertar imágenes, entre otros recursos. Sin embargo, mas allá del diseño corresponde en el título poder explicitar desde que institución fue producido el tablero para comprender las fuentes de los datos.
 
-![](imagenes/1 Tablero para index.png)
+![](imagenes/1%20Tablero%20para%20index.png)
 
 La automatización de los datos en títulos y subtítulos, frecuencias absolutas (n) y relativas (%) es una buena práctica para evitar la actualización manual de los datos en el tablero.
 
 La prefiguración del tablero permite identificar los pasos necesarios para el procesamiento de los datos que necesitamos realizar para alcanzar esas visualizaciones.
 
 Esto nos lleva al siguiente módulo, el trabajo con nuestra base de datos para convertirla en el input que necesitamos para nuestro tablero.
+
+### Fuentes de datos en Looker Studio:
+
+Las fuentes de datos son los lugares de donde provienen los datos que vamos a utilizar en los informes. Looker Studio está diseñado para conectarse a múltiples fuentes mediante conectores. Los conectores son herramientas que permiten acceder a datos de diferentes plataformas y bases de datos, facilitando su extracción y visualización.
+
+-    Google Sheets: Permite importar datos directamente desde hojas de cálculo
+    online.
+
+-   CSV: Facilita la carga de datos desde archivos CSV (valores separados por
+    comas).
+
+-   Google Analytics: Conecta a las métricas del análisis web.
+
+-   MySQL: Para bases de datos MySQL.
+
+-   Google Ads: Para obtener datos de campañas publicitarias.
+
+![](imagenes/fuentes de datos en looker.png)
+
+#### Pasos para conectar nuestro proyecto con fuentes de datos:
+
+-   Crear un nuevo informe como vimos anteriormente: Entrar a Looker Studio y seleccionar "Crear" \> "Informe".
+
+-   Agregar datos: Hacer clic en "Agregar datos" de acuerdo a la fuente
+
+![](imagenes/fuentes de datos en looker.png)
+
+-    Seleccionar archivo de Google Sheets disponible: Tener en cuenta si el archivo fue creado por nos o por otros usuarios. En ese caso hay que tener presente los permisos para acceder al archivo de Google Sheets.
+
+### Modelado de datos en Google Sheets
+
+El modelado de datos es el proceso de estructurar y organizar los datos de manera que sean fáciles de analizar y visualizar. Looker Studio nos ofrece múltiples opciones, como crear tablas, agregar filtros y calcular métricas personalizadas.
+
+![](imagenes/modelado de datos.png)
+
+Inmediatamente después de conectar Looker Studio con la fuente de datos, podemos explorarla desde el panel de gestión de datos y comenzar a transformar los datos.
+Algunas de las transformaciones básicas incluyen cambiar el tipo de dato de un campo, renombrar columnas, o crear agrupamientos sencillos. Más adelante exploraremos una característica más de Looker Studio para el modelado de datos: la combinación de fuentes.
+
+-   Agrupaciones: se agrupan datos para crear categorías.
+
+-   Cálculos Personalizados: Looker Studio permite crear métricas personalizadas, como totales, tasas, etc. Para esto, se pueden usar fórmulas simples en los campos calculados.
+
+-   Filtrado de Datos: Podemos filtrar datos directamente en el modelo y en los
+    informes. Por ejemplo, si queremos ver únicamente los casos notificados del último
+    trimestre, podemos aplicar un filtro de fecha pertinente.

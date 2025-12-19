@@ -8,3 +8,63 @@ execute:
   warning: false
   message: false
 ---
+
+## Controles y filtros para nuestro tablero
+
+Los ***filtros*** reducen los datos que se muestran a los lectores de informes. Como editor de informes, las propiedades de filtro nos permiten enfocar en los datos que mejor comunican la historia que deseas contar, lo que hace que tus informes sean más relevantes para tu público.
+
+Podemos aplicar un filtro a un gráfico, control, página o a todo el informe con la pestaña **Recurso**.
+
+![](imagenes/menu%20filtros.png)
+
+A veces, las propiedades de los filtros se denominan *filtros del editor*, ya que los lectores de los informes no pueden cambiarlas. Solo los editores de informes pueden cambiar las propiedades de los filtros.
+
+![](imagenes/filtros%20looker.png)
+
+A diferencia de los filtros, los **controles** permiten interactuar al usuario con los datos de las siguientes maneras:
+
+-   Filtrar los datos por valores de dimensión específicos
+
+-   Establece el período del informe.
+
+-   Establecer valores de parámetros que luego se pueden usar en campos calculados o pasar de vuelta al conector
+
+-   Cambiar el conjunto de datos subyacente que utiliza una fuente de datos
+
+![](imagenes/controles%201.png)
+
+Los controles prefiguran la interacción que puede tener un usuario que visualiza nuestro tablero, en este sentido su configuración depende de la definición de público que va a visualizar. En este sentido en el campo de la salud no es lo mismo un tablero para el equipo de salud en el nivel asistencial, para un equipo de gestión sanitaria en un nivel central o para usuarios/as del sistema de salud o para todos al mismo tiempo.
+
+Esto debe estar definidio en nuestro plan de análisis, en la documentación de nuestro proyecto. Algunas preguntas que pueden orientarnos:
+
+-   Identificación de público destinatario: ¿Quiénes son?
+
+-   Expectativas: ¿Qué buscan y qué esperan de nuestro tablero?
+
+-   Obligaciones y protección de datos: ¿Qué derechos tienen? ¿Qué obligaciones tenemos con ellos? ¿Qué datos están protegidos y son sensibles?
+
+-   Contexto: ¿Hay características contextuales que tenemos que tener en cuenta con respecto a la información sanitaria que estamos publicando?
+
+## Entornos de Trabajo Colaborativo
+
+En el desarrollo de nuestro tablero es importante tener en cuenta la necesidad de proteger la seguridad para proteger la calidad de los datos, la confidencialidad, integridad y disponibilidad de la información en salud.
+
+En esta dirección, en entornos de trabajo colaborativo, es importante considerar los siguientes elementos e incorporarlos en nuestra guía operativa en el marco del plan de análisis:
+
+-   Permisos y Roles: Asignar permisos y roles adecuados a los miembros del equipo para garantizar que solo las personas autorizadas puedan acceder y modificar los archivos.
+
+-   Compartir Archivos: Compartir archivos solo con las personas que necesitan acceder a ellos, utilizando la función de "Compartir" en Google Drive y Looker Studio.
+
+-   Enlaces de Acceso: Utilizar enlaces de acceso seguros para compartir archivos, en lugar de enviar archivos adjuntos por correo electrónico.
+
+-   Fecha de Expiración: Establecer una fecha de expiración para los enlaces de acceso, para garantizar que los archivos no sean accesibles después de un período determinado.
+
+-   Notificaciones: Configurar notificaciones para alertar a los miembros del equipo cuando se realicen cambios en los archivos compartidos.
+
+-   Protección de Hojas y Rangos de Planillas de Cálculo: Utilizar la función de "Proteger hoja" o "Proteger rango" en Google Sheets para restringir el acceso y la edición de ciertas áreas de la planilla.
+
+-   Limitaciones de Seguridad en Google Drive: Establecer limitaciones de seguridad en Google Drive, como: Restringir el acceso a archivos y carpetas específicas, y establecer permisos de edición y visualización para diferentes usuarios.
+
+![](imagenes/compartir.png)
+
+![](imagenes/limitaciones%20compartir.png)

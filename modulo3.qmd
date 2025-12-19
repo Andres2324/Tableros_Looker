@@ -9,4 +9,164 @@ execute:
   message: false
 ---
 
-## Bases de datos en google sheets
+## Bases de datos en Google Sheets ![](imagenes/google%20sheets.webp){width="47"}
+
+En el campo de la vigilancia epidemiológica el uso de tablas de carga manual para el armado de bases de datos en [Google Sheets](https://workspace.google.com/products/sheets/), presenta algunas ventajas:
+
+-   Puede permitir organizar, limpiar y transformar (procesamiento) datos brutos en un formato adecuado para su análisis. La finalidad de este proceso, es obtener una estructura apropiada para su posterior análisis. La calidad de los datos es crucial, ya que cualquier error o inconsistencia puede afectar la precisión de los resultados obtenidos.
+
+-   Puede permitir el trabajo colaborativo, tanto para la carga de datos como para el procesamiento de los datos a partir del entorno de Google Sheets.
+
+Sin embargo en la práctica de la vigilancia epidemiológica, puede que las bases de datos de carga manual presenten limitaciones a la hora de pensarlas como Inputs (Entradas) en el proceso de cual el tablero y sus componentes son outputs (salidas)
+
+![](imagenes/input%20output.png){width="544"}
+
+*Fuente de la imágen: [R for Data Science](https://r4ds.had.co.nz/tidy-data.html)*
+
+En este sentido es una buena práctica el armado de una base de datos específica como entrada (Input) para el tablero que estamos diseñando. De esta forma, la base de datos en Google Sheets que alimenta el tablero en Looker Studio, no es la que utilizamos para la carga manual de los datos sino que esta diseñada exclusivamente para alimentar al tablero.
+
+## Limpieza y estructura de datos en Google Sheets
+
+Una de las herramientas más accesibles para la limpieza y preparación de datos es Google Sheets. Principales acciones a realizar:
+
+-   **Estructura de nuestra base de datos:** Es fundamental identificar la o las ***unidad de análisis*** de la base de datos con la que estamos trabajando. Muchas veces, de acuerdo a la estrategia de vigilancia epidemiológica, podemos tener bases que combinan varias unidades de análisis posibles, por ejemplo personas o muestras de laboratorio.
+
+    En este sentido, tenemos que definir de acuerdo a nuestros objetivos ¿Cuáles serán nuestras unidades de análisis en nuestro plan de análisis? Una vez que hayamos definido ello vale la pena tener en cuenta: que cada valor debe tener su propio celda, que cada variable debe tener su propia columna y que cada observación debe tener su propia fila. Las observaciones en principio son nuestras unidades de análisis de acuerdo a como estructuremos nuestros datos.
+
+![](imagenes/Valores%20observaciones%20variables.png)
+
+*Fuente de la imágen: [R for Data Science](https://r4ds.had.co.nz/tidy-data.html)*
+
+Ahora bien no siempre en las bases de datos estan claros estos elementos y puede presetarse a confusión. Veamos un ejemplo:
+
+![](images/clipboard-1703708606.png)
+
+*Fuente de la imágen: [Applied Epi Comunity](https://community.appliedepi.org/top?period=quarterly)*
+
+¿Cuál son nuestras variables y cuáles nuestas observaciones (unidad de análisis) en la tabla anterior? ¿Por qué esta desordenado?
+
+![](images/clipboard-1069839081.png)
+
+*Fuente de la imágen: [Applied Epi Comunity](https://community.appliedepi.org/top?period=quarterly)*
+
+Un problema común es un conjunto de datos donde algunos nombres de columnas no son nombres de variables, sino *valores* de una variable. En esta segunda imagen las columnas definen claramente las variables y mediante un pivoteo de los datos, se logra una versión de tabla mas larga (`LONGER)` que resulta mas útil para el procesamiento de los datos que la versión ancha (`WIDER).`
+
+![](images/clipboard-2457790541.png)
+
+Este tipo de tablas, bien estructuradas y en formato largo, son la ideales para la lectura y procesamiento en software para procesar datos como Looker Studio. Sin embargo, muchas veces para la comodidad de la carga manual de los datos de la vigilancia utilizamos bases de datos mas anchas. Tener en cuenta esta diferencia es clave para el armado de los inputs (entradas) de nuestro tablero.
+
+-   **Eliminación de Duplicados:** Identificar y eliminar filas que contengan información repetida. Ejemplo: De acuerdo a la definición de nuestra unidad de análisis podemos identificar que filas repiten información.
+
+-   **Identificación y corrección de valores anómalos:** Arreglar errores tipográficos o de formato, corregir valores fuera de rango.
+
+-   **Tratamiento de Valores Faltantes:** Decidir cómo manejar los datos que no se registraron. Ejemplo: Se puede optar por eliminar filas con datos faltantes o imputar valores promediando las columnas de datos presentes.
+
+-   **Normalización de Datos:** Ajustar los datos a un formato y rango consistentemente. Ejemplo: Convertir todas las fechas al formato "DD/MM/AAAA".
+
+-   **Integración de Diferentes Fuentes de Datos:** Combinar varias fuentes de datos en una sola estructura. Ejemplo: Agregar una columna con los nombres de localidades a partir de las direcciones de domicilio.
+
+### Pasos opertaivos para la limpieza de datos en Goolgle Sheets
+
+1.  Importar Datos: Cargar los datos en Google Sheets desde la fuente necesaria.
+
+2.  Eliminar Duplicados: Utilizar la función "Datos" \> "Eliminar Duplicados".
+
+3.  Buscar Errores y Valores Anómalos: Crear filtros para identificar errores visualmente y corregirlos manualmente. Identificar valores fuera de rango y aplicar una estrategia apropiada para su tratamiento (ignorar, estimar o reemplazar)
+
+4.  Tratar Valores Faltantes: Aplicar estrategias para trabajar los valores faltantes.
+
+5.  Estandarizar y Normalizar: Usar fórmulas como `MAYUS()`, `MINUS()` o `NOMPROPIO()` para uniformar el texto.
+
+6.  Integrar Diferentes Fuentes de Datos que consideremos necesarias: Usar fórmulas como `IMPORTRANGE()`, `BUSCARX()` o `QUERY()` para obtener la estructura de la tabla requerida.
+
+## Funciones en Google Sheets
+
+Google Sheets ofrece varias funciones que facilitan la transformación y manipulación de los datos. Estas nos permitirán estructurar el armado de nuestro input (entrada) para el diseño de nuestro tablero (dasboard). La familiarizacion con estas formulas será de gran ayuda para el procesamiento.
+
+### Funciones básicas para transformar datos
+
+| Funciones | Definición operativa |
+|:--:|:--:|
+| Función `CONCATENAR` | Permite combinar dos o más celdas en una sola. Ejemplo: =CONCATENAR(A2, " ", B2) fusiona el nombre y apellido en una sola celda. |
+| Función `SI` | Crea condiciones lógicas que permiten tomar decisiones en función del contenido de las celdas. Ejemplo: =SI(C2\>100, "Alto", "Bajo") indica si el valor en C2 es mayor a 100. |
+| Función `BUSCARX` | Útil para buscar datos en tablas. Ejemplo: =BUSCARX(D2, A2:A, B2:B) busca el valor de D2 en la columna A y devuelve el valor correspondiente de la columna B. |
+| Función `TEXTO` | Permite dar formato a números y fechas. Ejemplo: =TEXTO(E2, "DD/MM/YYYY") transforma una fecha en otro formato. |
+
+### Funciones para importar y combinar datos
+
+| Funciones | Ejemplo | Definición operativa |
+|----|----|----|
+| `IMPORTRANGE()` | =IMPORTRANGE("URL_de_la_hoja", "Hoja1!A1:B10") | Permite importar un rango de celdas de una hoja de cálculo a otra. Esto es especialmente útil si trabajamos con múltiples fuentes de datos. |
+| `QUERY()` | =QUERY(A1:C10, "SELECT A, SUM(B) WHERE C='Valor' GROUP BY A", 1) | Permite realizar consultas similares a SQL sobre un rango de datos. Esto facilita la combinación y el agrupamiento de datos. |
+| `UNIQUE` y `FILTER` | =UNIQUE(FILTER(A1:A10, B1:B10="Condición")) | La combinación de UNIQUE y FILTER puede ayudar a agrupar datos sin duplicados y aplicar filtros a conjuntos específicos. |
+| `BUSCARX()` | =BUSCARX(A2, D:D, E:E) | La función BUSCARX es una herramienta potente para buscar y combinar datos de diferentes tablas. Permite realizar búsquedas en rangos específicos y devolver resultados de manera efectiva, especialmente si estas trabajando con dos tablas diferentes |
+
+### Funciones para la limpieza de los datos
+
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| Funciones                       | Ejemplo                                                                                | Definición operativa                                                                 |
++=================================+========================================================================================+======================================================================================+
+| `UNIQUE()`                      | =UNIQUE(A1:A100)                                                                       | Para obtener los valores únicos en un rango de datos                                 |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SI(ESBLANCO())`                | =IF(ESBLANCO(A1), "Valor por defecto", A1)                                             | Para reemplazar valores nulos o vacíos                                               |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `NOMPROPIO,` `MAYUSC` o `MINUS` | =MAYUSC(A1)                                                                            | A veces, los datos pueden venir en diferentes formatos, como mayúsculas y minúsculas |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `CONCATENAR()`                  | =CONCATENAR(A1; " "; B1)                                                               | Para combinar texto de diferentes celdas. La función inversa es `SPLIT ()`           |
+|                                 |                                                                                        |                                                                                      |
+|                                 | =A1 & " " & B1                                                                         |                                                                                      |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SI()`                          | =SI(A1 \> 100, "Alto", "Bajo")                                                         | Permite ejecutar diferentes acciones basadas en condiciones.                         |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `IFS()`                         | =IFS(A1 \> 100, "Alto", A1 \> 50, "Medio", A1 \<= 50, "Bajo")                          | Más eficaz para varias condiciones.                                                  |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SWITCH ()`                     | =SWITCH(A1, "Opción1", "Resultado1", "Opción2", "Resultado2", "Opción3", "Resultado3") | Cuando tenemos un número limitado de opciones, SWITCH() puede simplificar el código. |
++---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+
+El uso de estas funciones es clave para la manipulación, el procesamiento y la transformación de los datos necesario para el armado de nuestro input.
+
+Existen muchas [otras funciones](https://support.google.com/docs/table/25273?hl=es-419) posibles de utilizar en el entorno de Google Sheets. Las que presentamos en el presente módulo son esenciales para un manejo eficiente de los datos.
+
+## 
+
+Fuentes de Datos Combinados
+
+En Looker Studio, combinar datos de diferentes fuentes puede ser útil para obtener un análisis más completo. Para ello, se utilizan `SQL JOINS`, que permiten unir tablas a partir de una relación común.
+
+-   INNER JOIN: Devuelve filas que tienen coincidencias en ambas tablas.
+
+    ![](imagenes/INNER%20JOIN.png)
+
+-   LEFT JOIN: Devuelve todas las filas de la tabla izquierda y las coincidencias de la tabla derecha, mostrando NULL cuando no hay coincidencias.
+
+    ![](imagenes/LEFT%20JOIN.png)
+
+-   RIGHT JOIN: Devuelve todas las filas de la tabla derecha y las coincidencias de la tabla izquierda.
+
+    ![](imagenes/RIGHT%20JOIN.png)
+
+-   FULL OUTER JOIN : Devuelve filas cuando hay una coincidencia en una de las tablas.
+
+    ![](imagenes/FULL%20OUTER%20JOIN.png)
+
+### Combinando Datos en Looker Studio
+
+En Looker Studio podemos combinar datos sin escribir código por medio del editor de combinación. Esta combinación se compone de al menos dos tablas, y cinco tablas como máximo.
+
+1.  Tablas
+
+2.  Configuración de unión
+
+3.  Botón Unirse a otra tabla
+
+4.  Nombre de la combinación
+
+5.  Dimensiones y métricas incluidas
+
+6.  Agrega métricas, un período y filtros
+
+7.  Opción Ocultar campos de unión repetidos y botón GUARDAR
+
+Una configuración de unión vincula pares de tablas en una combinación, que no son otra cosa que los diferentes tipos de JOINS que repasamos en SQL .
+
+![](imagenes/CONFIGURACION%20UNIONES%20LOOKER.png)
