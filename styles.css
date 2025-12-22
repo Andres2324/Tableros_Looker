@@ -16,14 +16,17 @@ a:hover {
 
 table {
   width: 100%;
+  border:1px solid #001792;
   border-collapse: collapse;
-  background-color: #F4DFB9;
+  background-color: #90D5FF;
 }
+
 th {
   background-color: #2C3E4C;
-  color: #F4DFB9;
+  color: #90D5FF;
   padding: 10px;
 }
+
 td {
   padding: 8px;
   border: 1px solid #2C3E4C;
@@ -61,4 +64,5 @@ button:hover, .btn:hover {
   font-weight: bold;
   margin-top: 10px;
 }
+
 

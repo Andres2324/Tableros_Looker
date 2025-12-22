@@ -1,6 +1,6 @@
 ---
 title: "Modulo 5.Integración, interactividad y configuración del tablero"
-toc: false
+toc: True
 df-print: paged
 smooth-scroll: true
 execute:

@@ -1,6 +1,6 @@
 ---
 title: "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos"
-toc: false
+toc: True
 df-print: paged
 smooth-scroll: true
 execute:
@@ -85,43 +85,53 @@ Google Sheets ofrece varias funciones que facilitan la transformación y manipul
 
 ### Funciones básicas para transformar datos
 
-| Funciones | Definición operativa |
-|:--:|:--:|
-| Función `CONCATENAR` | Permite combinar dos o más celdas en una sola. Ejemplo: =CONCATENAR(A2, " ", B2) fusiona el nombre y apellido en una sola celda. |
-| Función `SI` | Crea condiciones lógicas que permiten tomar decisiones en función del contenido de las celdas. Ejemplo: =SI(C2\>100, "Alto", "Bajo") indica si el valor en C2 es mayor a 100. |
-| Función `BUSCARX` | Útil para buscar datos en tablas. Ejemplo: =BUSCARX(D2, A2:A, B2:B) busca el valor de D2 en la columna A y devuelve el valor correspondiente de la columna B. |
-| Función `TEXTO` | Permite dar formato a números y fechas. Ejemplo: =TEXTO(E2, "DD/MM/YYYY") transforma una fecha en otro formato. |
++-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Funciones               | Definición operativa                                                                                                                                                          |
++:=======================:+:=============================================================================================================================================================================:+
+| Función `CONCATENAR ()` | Permite combinar dos o más celdas en una sola. Ejemplo: =CONCATENAR(A2, " ", B2) fusiona el nombre y apellido en una sola celda.                                              |
++-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Función `SI ()`         | Crea condiciones lógicas que permiten tomar decisiones en función del contenido de las celdas. Ejemplo: =SI(C2\>100, "Alto", "Bajo") indica si el valor en C2 es mayor a 100. |
++-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Función `BUSCARX ()`    | Útil para buscar datos en tablas. Ejemplo: =BUSCARX(D2, A2:A, B2:B) busca el valor de D2 en la columna A y devuelve el valor correspondiente de la columna B.                 |
++-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Función `TEXTO ()`      | Permite dar formato a números y fechas. Ejemplo: =TEXTO(E2, "DD/MM/YYYY") transforma una fecha en otro formato.                                                               |
++-------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ### Funciones para importar y combinar datos
 
-| Funciones | Ejemplo | Definición operativa |
-|----|----|----|
-| `IMPORTRANGE()` | =IMPORTRANGE("URL_de_la_hoja", "Hoja1!A1:B10") | Permite importar un rango de celdas de una hoja de cálculo a otra. Esto es especialmente útil si trabajamos con múltiples fuentes de datos. |
-| `QUERY()` | =QUERY(A1:C10, "SELECT A, SUM(B) WHERE C='Valor' GROUP BY A", 1) | Permite realizar consultas similares a SQL sobre un rango de datos. Esto facilita la combinación y el agrupamiento de datos. |
-| `UNIQUE` y `FILTER` | =UNIQUE(FILTER(A1:A10, B1:B10="Condición")) | La combinación de UNIQUE y FILTER puede ayudar a agrupar datos sin duplicados y aplicar filtros a conjuntos específicos. |
-| `BUSCARX()` | =BUSCARX(A2, D:D, E:E) | La función BUSCARX es una herramienta potente para buscar y combinar datos de diferentes tablas. Permite realizar búsquedas en rangos específicos y devolver resultados de manera efectiva, especialmente si estas trabajando con dos tablas diferentes |
++--------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Funciones                | Ejemplo                                                          | Definición operativa                                                                                                                                                                                                                                    |
++==========================+==================================================================+=========================================================================================================================================================================================================================================================+
+| `IMPORTRANGE()`          | =IMPORTRANGE("URL_de_la_hoja", "Hoja1!A1:B10")                   | Permite importar un rango de celdas de una hoja de cálculo a otra. Esto es especialmente útil si trabajamos con múltiples fuentes de datos.                                                                                                             |
++--------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `QUERY()`                | =QUERY(A1:C10, "SELECT A, SUM(B) WHERE C='Valor' GROUP BY A", 1) | Permite realizar consultas similares a SQL sobre un rango de datos. Esto facilita la combinación y el agrupamiento de datos.                                                                                                                            |
++--------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `UNIQUE()` y `FILTER ()` | =UNIQUE(FILTER(A1:A10, B1:B10="Condición"))                      | La combinación de UNIQUE y FILTER puede ayudar a agrupar datos sin duplicados y aplicar filtros a conjuntos específicos.                                                                                                                                |
++--------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| `BUSCARX()`              | =BUSCARX(A2, D:D, E:E)                                           | La función BUSCARX es una herramienta potente para buscar y combinar datos de diferentes tablas. Permite realizar búsquedas en rangos específicos y devolver resultados de manera efectiva, especialmente si estas trabajando con dos tablas diferentes |
++--------------------------+------------------------------------------------------------------+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 
 ### Funciones para la limpieza de los datos
 
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| Funciones                       | Ejemplo                                                                                | Definición operativa                                                                 |
-+=================================+========================================================================================+======================================================================================+
-| `UNIQUE()`                      | =UNIQUE(A1:A100)                                                                       | Para obtener los valores únicos en un rango de datos                                 |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `SI(ESBLANCO())`                | =IF(ESBLANCO(A1), "Valor por defecto", A1)                                             | Para reemplazar valores nulos o vacíos                                               |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `NOMPROPIO,` `MAYUSC` o `MINUS` | =MAYUSC(A1)                                                                            | A veces, los datos pueden venir en diferentes formatos, como mayúsculas y minúsculas |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `CONCATENAR()`                  | =CONCATENAR(A1; " "; B1)                                                               | Para combinar texto de diferentes celdas. La función inversa es `SPLIT ()`           |
-|                                 |                                                                                        |                                                                                      |
-|                                 | =A1 & " " & B1                                                                         |                                                                                      |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `SI()`                          | =SI(A1 \> 100, "Alto", "Bajo")                                                         | Permite ejecutar diferentes acciones basadas en condiciones.                         |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `IFS()`                         | =IFS(A1 \> 100, "Alto", A1 \> 50, "Medio", A1 \<= 50, "Bajo")                          | Más eficaz para varias condiciones.                                                  |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
-| `SWITCH ()`                     | =SWITCH(A1, "Opción1", "Resultado1", "Opción2", "Resultado2", "Opción3", "Resultado3") | Cuando tenemos un número limitado de opciones, SWITCH() puede simplificar el código. |
-+---------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| Funciones                                | Ejemplo                                                                                | Definición operativa                                                                 |
++==========================================+========================================================================================+======================================================================================+
+| `UNIQUE()`                               | =UNIQUE(A1:A100)                                                                       | Para obtener los valores únicos en un rango de datos                                 |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SI(ESBLANCO())`                         | =IF(ESBLANCO(A1), "Valor por defecto", A1)                                             | Para reemplazar valores nulos o vacíos                                               |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `NOMPROPIO (),` `MAYUSC ()` o `MINUS ()` | =MAYUSC(A1)                                                                            | A veces, los datos pueden venir en diferentes formatos, como mayúsculas y minúsculas |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `CONCATENAR()`                           | =CONCATENAR(A1; " "; B1)                                                               | Para combinar texto de diferentes celdas. La función inversa es `SPLIT ()`           |
+|                                          |                                                                                        |                                                                                      |
+|                                          | =A1 & " " & B1                                                                         |                                                                                      |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SI()`                                   | =SI(A1 \> 100, "Alto", "Bajo")                                                         | Permite ejecutar diferentes acciones basadas en condiciones.                         |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `IFS()`                                  | =IFS(A1 \> 100, "Alto", A1 \> 50, "Medio", A1 \<= 50, "Bajo")                          | Más eficaz para varias condiciones.                                                  |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
+| `SWITCH ()`                              | =SWITCH(A1, "Opción1", "Resultado1", "Opción2", "Resultado2", "Opción3", "Resultado3") | Cuando tenemos un número limitado de opciones, SWITCH() puede simplificar el código. |
++------------------------------------------+----------------------------------------------------------------------------------------+--------------------------------------------------------------------------------------+
 
 El uso de estas funciones es clave para la manipulación, el procesamiento y la transformación de los datos necesario para el armado de nuestro input.
 

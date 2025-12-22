@@ -1,6 +1,6 @@
 ---
 title: "Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica"
-toc: false
+toc: True
 df-print: paged
 smooth-scroll: true
 execute:
@@ -11,22 +11,19 @@ execute:
 
 ## Diseño y maquetación de tableros interactivos en Looker Studio
 
-Un tablero (dashboard) es una herramienta de visualización que presenta métricas (medidas de resumen) e indicadores en un formato gráfico y fácil de entender. Su principal objetivo es ofrecer información relevante de manera rápida, lo que permite una toma de decisiones ágil
-y fundamentada.
+Un tablero (dashboard) es una herramienta de visualización que presenta métricas (medidas de resumen) e indicadores en un formato gráfico y fácil de entender. Su principal objetivo es ofrecer información relevante de manera rápida, lo que permite una toma de decisiones ágil y fundamentada.
 
 Para el diseño del tablero en Looker Studio, tomando en cuenta que son herramientas que permiten consolidar información, es recomendable previamente a procesar los datos diseñar las visualizaciones y elementos que queremos que esten visibiles.
 
 ### Componentes de un tablero
 
-Un dashboard eficaz debe contar con varios componentes clave. En primer lugar, debe incluir
-*gráficos y visualizaciones* que permitan interpretar los datos e indicadores de manera clara.
+Un dashboard eficaz debe contar con varios componentes clave. En primer lugar, debe incluir *gráficos y visualizaciones* que permitan interpretar los datos e indicadores de manera clara.
 
-También es fundamental incorporar *filtros* e interactividad, lo que permite a los usuarios
-explorar datos y centrarse en áreas específicas. Por último, se recomienda añadir una narrativa que explique las visualizaciones y proporcione contexto a la información presentada.
+También es fundamental incorporar *filtros* e interactividad, lo que permite a los usuarios explorar datos y centrarse en áreas específicas. Por último, se recomienda añadir una narrativa que explique las visualizaciones y proporcione contexto a la información presentada.
 
 En este sentido para lograr un tablero comprensible, es imporntante seleccionar bien los componentes y la estética que queremos lograr tomando en cuenta los objetivos explicitados en el plan de análisis (Modulo 1).
 
-### Introducción a Looker Studio  ![](imagenes/looker.png){width="35" height="40"}
+### Introducción a Looker Studio ![](imagenes/looker.png){width="35" height="40"}
 
 Los pasos clave para poder el uso de la plataforma son:
 
@@ -82,11 +79,9 @@ Esto nos lleva al siguiente módulo, el trabajo con nuestra base de datos para c
 
 Las fuentes de datos son los lugares de donde provienen los datos que vamos a utilizar en los informes. Looker Studio está diseñado para conectarse a múltiples fuentes mediante conectores. Los conectores son herramientas que permiten acceder a datos de diferentes plataformas y bases de datos, facilitando su extracción y visualización.
 
--    Google Sheets: Permite importar datos directamente desde hojas de cálculo
-    online.
+-   Google Sheets: Permite importar datos directamente desde hojas de cálculo online.
 
--   CSV: Facilita la carga de datos desde archivos CSV (valores separados por
-    comas).
+-   CSV: Facilita la carga de datos desde archivos CSV (valores separados por comas).
 
 -   Google Analytics: Conecta a las métricas del análisis web.
 
@@ -94,7 +89,7 @@ Las fuentes de datos son los lugares de donde provienen los datos que vamos a ut
 
 -   Google Ads: Para obtener datos de campañas publicitarias.
 
-![](imagenes/fuentes de datos en looker.png)
+![](imagenes/fuentes%20de%20datos%20en%20looker.png)
 
 #### Pasos para conectar nuestro proyecto con fuentes de datos:
 
@@ -102,23 +97,20 @@ Las fuentes de datos son los lugares de donde provienen los datos que vamos a ut
 
 -   Agregar datos: Hacer clic en "Agregar datos" de acuerdo a la fuente
 
-![](imagenes/fuentes de datos en looker.png)
+![](imagenes/fuentes%20de%20datos%20en%20looker.png)
 
--    Seleccionar archivo de Google Sheets disponible: Tener en cuenta si el archivo fue creado por nos o por otros usuarios. En ese caso hay que tener presente los permisos para acceder al archivo de Google Sheets.
+-   Seleccionar archivo de Google Sheets disponible: Tener en cuenta si el archivo fue creado por nos o por otros usuarios. En ese caso hay que tener presente los permisos para acceder al archivo de Google Sheets.
 
 ### Modelado de datos en Google Sheets
 
 El modelado de datos es el proceso de estructurar y organizar los datos de manera que sean fáciles de analizar y visualizar. Looker Studio nos ofrece múltiples opciones, como crear tablas, agregar filtros y calcular métricas personalizadas.
 
-![](imagenes/modelado de datos.png)
+![](imagenes/modelado%20de%20datos.png)
 
-Inmediatamente después de conectar Looker Studio con la fuente de datos, podemos explorarla desde el panel de gestión de datos y comenzar a transformar los datos.
-Algunas de las transformaciones básicas incluyen cambiar el tipo de dato de un campo, renombrar columnas, o crear agrupamientos sencillos. Más adelante exploraremos una característica más de Looker Studio para el modelado de datos: la combinación de fuentes.
+Inmediatamente después de conectar Looker Studio con la fuente de datos, podemos explorarla desde el panel de gestión de datos y comenzar a transformar los datos. Algunas de las transformaciones básicas incluyen cambiar el tipo de dato de un campo, renombrar columnas, o crear agrupamientos sencillos. Más adelante exploraremos una característica más de Looker Studio para el modelado de datos: la combinación de fuentes.
 
 -   Agrupaciones: se agrupan datos para crear categorías.
 
 -   Cálculos Personalizados: Looker Studio permite crear métricas personalizadas, como totales, tasas, etc. Para esto, se pueden usar fórmulas simples en los campos calculados.
 
--   Filtrado de Datos: Podemos filtrar datos directamente en el modelo y en los
-    informes. Por ejemplo, si queremos ver únicamente los casos notificados del último
-    trimestre, podemos aplicar un filtro de fecha pertinente.
+-   Filtrado de Datos: Podemos filtrar datos directamente en el modelo y en los informes. Por ejemplo, si queremos ver únicamente los casos notificados del último trimestre, podemos aplicar un filtro de fecha pertinente.

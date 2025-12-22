@@ -14,13 +14,13 @@ book:
 
 format:
   html:
-    embed-resources: true # esto no debe modificarse nunca
+    embed-resources: true # para que renderice con los elementos
     published-title: "Fecha:"  # Cambia "Published" por "Fecha"
     author-title: 
     toc: true                # Habilita la tabla de contenidos
     toc-title: "Índice de Contenidos"  # Título del índice
     toc-depth: 3             # Nivel de profundidad del índice (hasta h3)
-    toc-location: left       # Ubicación del índice (izquierda)
+    toc-location: right       # Ubicación del índice (derecha)
     code-tools: false
     number-sections: false
     css: styles.css 

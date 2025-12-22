@@ -1,6 +1,6 @@
 ---
 title: "Modulo 4. Interfaz de Looker Studio y visualizaciones"
-toc: false
+toc: True
 df-print: paged
 smooth-scroll: true
 execute:

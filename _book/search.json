@@ -1,0 +1,242 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "",
+    "text": "Bienvenidos al curso de autoadministrado de Looker Studio\nLooker Studio1 es una herramienta de Google para crear informes y tableros interactivos (dashboards). Estas herramientas permiten procesar datos y construir visualizaciones interactivas sin la necesidad de escribir en algún lenguaje de programación de manera gratuita y accesible.\nPor otro lado permiten una integración nativa con las planillas de Google Sheets, útil en el caso de trabajo con planillas de vigilancia epidemiológicas colaborativas en Google Drive.\nEsta herramienta tiene la ventaja de estar subida a una cuenta de google y puede combinar varias fuentes, crear gráficos, tablas, filtros y compartir informes de actualización automática.\nSi bien en su versión gratuita presenta límites en su actualización, tiene un buen rendimiento con dataset pequeños y medianos (&gt; de 100.000 filas). A su vez, se requiere el procesamiento de los datos previamente para que el tablero funcione sin errores. En esta dirección el armado de los inputs del tablero, bases de datos enlazadas con el tablero, es un paso necesario para un óptimo funcionamiento.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
+    "href": "index.html#utilidad-de-esta-herramienta-para-la-vigilancia-epidemiológica",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "Utilidad de esta herramienta para la vigilancia epidemiológica",
+    "text": "Utilidad de esta herramienta para la vigilancia epidemiológica\nEl uso de esta herramienta permite fortalecer las habilidades y competencias para el procesamiento de datos y visualización de información producida a partir de la vigilancia epidemiológica.\nLa realización de un tablero, como proyecto supone la revisión de los circuitos de la producción del dato epidemiológico, de laboratorio, clínica, etc. En este sentido, embarcarse en el desarrollo de este tipo de proyectos, resulta una buena oportunidad para la revisión de las prácticas y de la calidad del dato por parte de los equipos que realizan la vigilancia epidemiológica a nivel jurisdiccional o en un efector de salud.\n\nAl tratarse de datos producidos en el marco de la vigilancia epidemiológica es un paso fundamental la anonimización de los datos sensibles y todo aquello dato que permita identificar a cualquier usuario del sistema de salud.\nEl armado del tablero también supone la definición de perfiles de usuario, en esta línea debe definirse si se trata de un tablero para usuarios/as del sistema de salud, para equipos de salud que realizan asistencia, para equipos de gestión en sus distintos niveles, etc.\nTomando en cuenta estos elementos, a lo largo del curso, vamos a ir recorriendo los pasos necesarios para la elaboración de un proyecto y el diseño de un tablero interactivo funcional usando Looker Studio.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#contenidos-del-curso",
+    "href": "index.html#contenidos-del-curso",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "Contenidos del curso",
+    "text": "Contenidos del curso\nLos contenidos de este curso autoadministrado están organizados de manera secuencial, proponiendo ejercicios para cada paso en la realización de un tablero interactivo, sus inputs y su documentación necesaria para actualizar.\n\nMódulo 1: Buenas prácticas en el desarrollo de proyectos. Plan de análisis y guía operativa.\nModulo 2: Introducción a los tableros interactivos para la vigilancia epidemiológica\nModulo 3: Fundamentos de Google Sheets para el procesamiento de datos\nModulo 4: Interfaz de Looker Studio y visualizaciones\nModulo 5: Integración, interactividad y configuración del tablero.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Curso auto-administrado para el diseño de tableros interactivos con Looker Studio",
+    "section": "",
+    "text": "https://docs.cloud.google.com/looker/docs/studio?hl=es.↩︎",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Curso autoadministrado para el diseño de tableros interactivos con Looker Studio</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html",
+    "href": "modulo1.html",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "",
+    "text": "Documentación para el desarrollo de proyectos\nLa documentación hace referencia a todo documento que acompaña el proyecto de tablero interactivo y que permite recopilar información técnica (de las herramientas utilizadas), metodológica (de desisiones vinculadas al procesamiento de los datos y su visualización), de contexto epidemiológico (fundamentación de acuerdo a las estrategias de vigilancia y el marco espacio-temporal) y de tipo operativo (instrucciones para el funcionamiento y la actualización)\nEn el marco de un proyecto de tablero interactivo que automatiza el procesamiento y la visualizacción de datos es fundamental contar con una buena documentación por varios motivos:",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html#documentación-para-el-desarrollo-de-proyectos",
+    "href": "modulo1.html#documentación-para-el-desarrollo-de-proyectos",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "",
+    "text": "Facilita la colaboración entre participantes del proyectos\nReduce errores en el desarrollo y mantenimiento\nAgiliza la incorporación de nuevos miembros al equipo y nuevos elementos en el tablero\nAsegura la continuidad del proyecto, su reproductibilidad y mejora la experiencia del usuario \nProporciona una guía clara sobre cómo funciona el proyecto, garantizando la calidad y escalabilidad a largo plazo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
+    ]
+  },
+  {
+    "objectID": "modulo1.html#plan-de-análisis",
+    "href": "modulo1.html#plan-de-análisis",
+    "title": "Modulo 1: Buenas prácticas en el desarrollo de proyectos.",
+    "section": "Plan de análisis",
+    "text": "Plan de análisis\nLos tableros interactivos permiten la visualización de información sanitaria. Esta visualización supone un procesamiento, una serie de acciones sobre los datos, para la producción de la información a partir de la vigilancia epidemiológica.\nEn este sentido el plan de análisis es un documento escrito que acompaña al proyecto, y que explicita las principales desiciones metodológicas y opertaivas utilizadas para el diseño del tablero interactivo.\nEn este sentido este documento permite registrar una serie de elementos que guardan una coherencia entre sí, que serán útiles para la continuidad del proyecto y qué permiten comprender como fue el proceso de armado del mismo.\nSi bien puede armarse de distintas formas, algunos de los elementos típicos de un plan de análisis son:\n\nIntroducción: Propósito y Justificación del proyecto. Definición de los eventos y las estrategias de vigilancia epidemiológica. Definición de usos principales, perfil de usuario y detinatarios.\nObjetivos: Definición de objetivos generales y específicos del proyecto\nMetodología: Período de análisis. Unidades de análisis. Criterios de inclusión y exclusión. Definición operativa y clasificación de variables. Fuentes de datos. Procesamiento y limpieza de los datos. Indicadores y visualizaciones.\nResultados esperados: Tiempo y lógica de actualización de los datos. Guía operativa.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Modulo 1: Buenas prácticas en el desarrollo de proyectos.</span>"
+    ]
+  },
+  {
+    "objectID": "modulo2.html",
+    "href": "modulo2.html",
+    "title": "Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica",
+    "section": "",
+    "text": "Diseño y maquetación de tableros interactivos en Looker Studio\nUn tablero (dashboard) es una herramienta de visualización que presenta métricas (medidas de resumen) e indicadores en un formato gráfico y fácil de entender. Su principal objetivo es ofrecer información relevante de manera rápida, lo que permite una toma de decisiones ágil y fundamentada.\nPara el diseño del tablero en Looker Studio, tomando en cuenta que son herramientas que permiten consolidar información, es recomendable previamente a procesar los datos diseñar las visualizaciones y elementos que queremos que esten visibiles.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica</span>"
+    ]
+  },
+  {
+    "objectID": "modulo2.html#diseño-y-maquetación-de-tableros-interactivos-en-looker-studio",
+    "href": "modulo2.html#diseño-y-maquetación-de-tableros-interactivos-en-looker-studio",
+    "title": "Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica",
+    "section": "",
+    "text": "Componentes de un tablero\nUn dashboard eficaz debe contar con varios componentes clave. En primer lugar, debe incluir gráficos y visualizaciones que permitan interpretar los datos e indicadores de manera clara.\nTambién es fundamental incorporar filtros e interactividad, lo que permite a los usuarios explorar datos y centrarse en áreas específicas. Por último, se recomienda añadir una narrativa que explique las visualizaciones y proporcione contexto a la información presentada.\nEn este sentido para lograr un tablero comprensible, es imporntante seleccionar bien los componentes y la estética que queremos lograr tomando en cuenta los objetivos explicitados en el plan de análisis (Modulo 1).\n\n\nIntroducción a Looker Studio \nLos pasos clave para poder el uso de la plataforma son:\n\nConexión de datos: Es posible conectar Looker Studio a Google Sheets, Google Analytics, bases de datos SQL y otras fuentes de datos.\nConstrucción de informes y reportes: Es posible crear visualizaciones acomo gráficos, tablas y mapas que se actualizan automáticamente con los datos.\nInteractividad: Una de las mayores ventajas de Looker Studio es la posibilidad de crear informes interactivos, donde los usuarios pueden filtrar y explorar los datos en tiempo real.\n\nEn los siguientes links podemos explorar las posibilidades de visualizaciones y de diseño de reportes\n\n\nCrear y configurar una cuenta\nPara comenzar a utilizar Looker Studio, primero debemos crear una cuenta. Aquí te explicamos cómo hacerlo:\n\n Acceder a Looker Studio\nIniciar sesión: Iniciar sesión con la cuenta de Google. Si no tenemos una cuenta de Google, debemos crear una.\nCrear el perfil: Una vez dentro, se nos pedirá que completemos nuestro perfil. Esto incluye definir preferencias de uso y permisos de acceso.\nConfigurar la cuenta: Podemos personalizar diversas configuraciones, como la temática de los informes.\nCrear un proyecto nuevo en Looker Studio\n\n\nHaciendo click en Informe vacío es posible crear un proyecto nuevo y editarlo. A su vez también se puede compartir y otorgar permisos a otros usuarios de Looker Studio para editar o solo para acceder a la visualización del tablero.\n\nAdemás de los gráficos, tablas, es posible insertar imagenes, texto, formas (lineas, puntos, polígonos) entre otros elementos típicos de procesadores de texto y que pueden utilizarse desde el menú de manera intuitiva.\n\nTomando en cuenta estos elementos, listamos algunos de los elementos típicos de los tableros en Looker Studio que podemos incorporar en nuestro proyecto:\n\nHojas del tablero: Puede incoporarse hojas al tablero permitiendo al usuario explorar las distintas visualizaciones e indicadores seleccionados. En esta dirección es útil definir el criterio que agrupa los datos por hoja. Por ejemplo: Datos provenientes de disintos efectores de salud o distintos eventos de notificación obligatoria. También es buena práctica colocar en la primer hoja un instructivo para la exploración del tablero, explicitar las fuentes de los datos y colocar un índice.\nFecha de actualización: Puede colocarse con un “cuadro de resultados” para automatizar la fecha de actualización considerando el valor máximo de una columna en formato fecha de nuestra base de datos. En el módulo 4 volveremos sobre este tipo de visualizaciones.\nTítulo: El título puede colocarse en el tablero como si fuera un procesador de texto de Google Docs o Google Slides, con un cuadro de texto. Se puede editar su color, fondo, formato, insertar imágenes, entre otros recursos. Sin embargo, mas allá del diseño corresponde en el título poder explicitar desde que institución fue producido el tablero para comprender las fuentes de los datos.\n\n\nLa automatización de los datos en títulos y subtítulos, frecuencias absolutas (n) y relativas (%) es una buena práctica para evitar la actualización manual de los datos en el tablero.\nLa prefiguración del tablero permite identificar los pasos necesarios para el procesamiento de los datos que necesitamos realizar para alcanzar esas visualizaciones.\nEsto nos lleva al siguiente módulo, el trabajo con nuestra base de datos para convertirla en el input que necesitamos para nuestro tablero.\n\n\nFuentes de datos en Looker Studio:\nLas fuentes de datos son los lugares de donde provienen los datos que vamos a utilizar en los informes. Looker Studio está diseñado para conectarse a múltiples fuentes mediante conectores. Los conectores son herramientas que permiten acceder a datos de diferentes plataformas y bases de datos, facilitando su extracción y visualización.\n\nGoogle Sheets: Permite importar datos directamente desde hojas de cálculo online.\nCSV: Facilita la carga de datos desde archivos CSV (valores separados por comas).\nGoogle Analytics: Conecta a las métricas del análisis web.\nMySQL: Para bases de datos MySQL.\nGoogle Ads: Para obtener datos de campañas publicitarias.\n\n\n\nPasos para conectar nuestro proyecto con fuentes de datos:\n\nCrear un nuevo informe como vimos anteriormente: Entrar a Looker Studio y seleccionar “Crear” &gt; “Informe”.\nAgregar datos: Hacer clic en “Agregar datos” de acuerdo a la fuente\n\n\n\nSeleccionar archivo de Google Sheets disponible: Tener en cuenta si el archivo fue creado por nos o por otros usuarios. En ese caso hay que tener presente los permisos para acceder al archivo de Google Sheets.\n\n\n\n\nModelado de datos en Google Sheets\nEl modelado de datos es el proceso de estructurar y organizar los datos de manera que sean fáciles de analizar y visualizar. Looker Studio nos ofrece múltiples opciones, como crear tablas, agregar filtros y calcular métricas personalizadas.\n\nInmediatamente después de conectar Looker Studio con la fuente de datos, podemos explorarla desde el panel de gestión de datos y comenzar a transformar los datos. Algunas de las transformaciones básicas incluyen cambiar el tipo de dato de un campo, renombrar columnas, o crear agrupamientos sencillos. Más adelante exploraremos una característica más de Looker Studio para el modelado de datos: la combinación de fuentes.\n\nAgrupaciones: se agrupan datos para crear categorías.\nCálculos Personalizados: Looker Studio permite crear métricas personalizadas, como totales, tasas, etc. Para esto, se pueden usar fórmulas simples en los campos calculados.\nFiltrado de Datos: Podemos filtrar datos directamente en el modelo y en los informes. Por ejemplo, si queremos ver únicamente los casos notificados del último trimestre, podemos aplicar un filtro de fecha pertinente.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Modulo 2. Introducción a los tableros interactivos para la vigilancia epidemiológica</span>"
+    ]
+  },
+  {
+    "objectID": "modulo3.html",
+    "href": "modulo3.html",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "",
+    "text": "Bases de datos en Google Sheets\nEn el campo de la vigilancia epidemiológica el uso de tablas de carga manual para el armado de bases de datos en Google Sheets, presenta algunas ventajas:\nSin embargo en la práctica de la vigilancia epidemiológica, puede que las bases de datos de carga manual presenten limitaciones a la hora de pensarlas como Inputs (Entradas) en el proceso de cual el tablero y sus componentes son outputs (salidas)\nFuente de la imágen: R for Data Science\nEn este sentido es una buena práctica el armado de una base de datos específica como entrada (Input) para el tablero que estamos diseñando. De esta forma, la base de datos en Google Sheets que alimenta el tablero en Looker Studio, no es la que utilizamos para la carga manual de los datos sino que esta diseñada exclusivamente para alimentar al tablero.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo3.html#bases-de-datos-en-google-sheets",
+    "href": "modulo3.html#bases-de-datos-en-google-sheets",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "",
+    "text": "Puede permitir organizar, limpiar y transformar (procesamiento) datos brutos en un formato adecuado para su análisis. La finalidad de este proceso, es obtener una estructura apropiada para su posterior análisis. La calidad de los datos es crucial, ya que cualquier error o inconsistencia puede afectar la precisión de los resultados obtenidos.\nPuede permitir el trabajo colaborativo, tanto para la carga de datos como para el procesamiento de los datos a partir del entorno de Google Sheets.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo3.html#limpieza-y-estructura-de-datos-en-google-sheets",
+    "href": "modulo3.html#limpieza-y-estructura-de-datos-en-google-sheets",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "Limpieza y estructura de datos en Google Sheets",
+    "text": "Limpieza y estructura de datos en Google Sheets\nUna de las herramientas más accesibles para la limpieza y preparación de datos es Google Sheets. Principales acciones a realizar:\n\nEstructura de nuestra base de datos: Es fundamental identificar la o las unidad de análisis de la base de datos con la que estamos trabajando. Muchas veces, de acuerdo a la estrategia de vigilancia epidemiológica, podemos tener bases que combinan varias unidades de análisis posibles, por ejemplo personas o muestras de laboratorio.\nEn este sentido, tenemos que definir de acuerdo a nuestros objetivos ¿Cuáles serán nuestras unidades de análisis en nuestro plan de análisis? Una vez que hayamos definido ello vale la pena tener en cuenta: que cada valor debe tener su propio celda, que cada variable debe tener su propia columna y que cada observación debe tener su propia fila. Las observaciones en principio son nuestras unidades de análisis de acuerdo a como estructuremos nuestros datos.\n\n\nFuente de la imágen: R for Data Science\nAhora bien no siempre en las bases de datos estan claros estos elementos y puede presetarse a confusión. Veamos un ejemplo:\n\nFuente de la imágen: Applied Epi Comunity\n¿Cuál son nuestras variables y cuáles nuestas observaciones (unidad de análisis) en la tabla anterior? ¿Por qué esta desordenado?\n\nFuente de la imágen: Applied Epi Comunity\nUn problema común es un conjunto de datos donde algunos nombres de columnas no son nombres de variables, sino valores de una variable. En esta segunda imagen las columnas definen claramente las variables y mediante un pivoteo de los datos, se logra una versión de tabla mas larga (LONGER) que resulta mas útil para el procesamiento de los datos que la versión ancha (WIDER).\n\nEste tipo de tablas, bien estructuradas y en formato largo, son la ideales para la lectura y procesamiento en software para procesar datos como Looker Studio. Sin embargo, muchas veces para la comodidad de la carga manual de los datos de la vigilancia utilizamos bases de datos mas anchas. Tener en cuenta esta diferencia es clave para el armado de los inputs (entradas) de nuestro tablero.\n\nEliminación de Duplicados: Identificar y eliminar filas que contengan información repetida. Ejemplo: De acuerdo a la definición de nuestra unidad de análisis podemos identificar que filas repiten información.\nIdentificación y corrección de valores anómalos: Arreglar errores tipográficos o de formato, corregir valores fuera de rango.\nTratamiento de Valores Faltantes: Decidir cómo manejar los datos que no se registraron. Ejemplo: Se puede optar por eliminar filas con datos faltantes o imputar valores promediando las columnas de datos presentes.\nNormalización de Datos: Ajustar los datos a un formato y rango consistentemente. Ejemplo: Convertir todas las fechas al formato “DD/MM/AAAA”.\nIntegración de Diferentes Fuentes de Datos: Combinar varias fuentes de datos en una sola estructura. Ejemplo: Agregar una columna con los nombres de localidades a partir de las direcciones de domicilio.\n\n\nPasos opertaivos para la limpieza de datos en Goolgle Sheets\n\nImportar Datos: Cargar los datos en Google Sheets desde la fuente necesaria.\nEliminar Duplicados: Utilizar la función “Datos” &gt; “Eliminar Duplicados”.\nBuscar Errores y Valores Anómalos: Crear filtros para identificar errores visualmente y corregirlos manualmente. Identificar valores fuera de rango y aplicar una estrategia apropiada para su tratamiento (ignorar, estimar o reemplazar)\nTratar Valores Faltantes: Aplicar estrategias para trabajar los valores faltantes.\nEstandarizar y Normalizar: Usar fórmulas como MAYUS(), MINUS() o NOMPROPIO() para uniformar el texto.\nIntegrar Diferentes Fuentes de Datos que consideremos necesarias: Usar fórmulas como IMPORTRANGE(), BUSCARX() o QUERY() para obtener la estructura de la tabla requerida.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo3.html#funciones-en-google-sheets",
+    "href": "modulo3.html#funciones-en-google-sheets",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "Funciones en Google Sheets",
+    "text": "Funciones en Google Sheets\nGoogle Sheets ofrece varias funciones que facilitan la transformación y manipulación de los datos. Estas nos permitirán estructurar el armado de nuestro input (entrada) para el diseño de nuestro tablero (dasboard). La familiarizacion con estas formulas será de gran ayuda para el procesamiento.\n\nFunciones básicas para transformar datos\n\n\n\n\n\n\n\nFunciones\nDefinición operativa\n\n\n\n\nFunción CONCATENAR ()\nPermite combinar dos o más celdas en una sola. Ejemplo: =CONCATENAR(A2, ” “, B2) fusiona el nombre y apellido en una sola celda.\n\n\nFunción SI ()\nCrea condiciones lógicas que permiten tomar decisiones en función del contenido de las celdas. Ejemplo: =SI(C2&gt;100, “Alto”, “Bajo”) indica si el valor en C2 es mayor a 100.\n\n\nFunción BUSCARX ()\nÚtil para buscar datos en tablas. Ejemplo: =BUSCARX(D2, A2:A, B2:B) busca el valor de D2 en la columna A y devuelve el valor correspondiente de la columna B.\n\n\nFunción TEXTO ()\nPermite dar formato a números y fechas. Ejemplo: =TEXTO(E2, “DD/MM/YYYY”) transforma una fecha en otro formato.\n\n\n\n\n\nFunciones para importar y combinar datos\n\n\n\n\n\n\n\n\nFunciones\nEjemplo\nDefinición operativa\n\n\n\n\nIMPORTRANGE()\n=IMPORTRANGE(“URL_de_la_hoja”, “Hoja1!A1:B10”)\nPermite importar un rango de celdas de una hoja de cálculo a otra. Esto es especialmente útil si trabajamos con múltiples fuentes de datos.\n\n\nQUERY()\n=QUERY(A1:C10, “SELECT A, SUM(B) WHERE C=‘Valor’ GROUP BY A”, 1)\nPermite realizar consultas similares a SQL sobre un rango de datos. Esto facilita la combinación y el agrupamiento de datos.\n\n\nUNIQUE() y FILTER ()\n=UNIQUE(FILTER(A1:A10, B1:B10=“Condición”))\nLa combinación de UNIQUE y FILTER puede ayudar a agrupar datos sin duplicados y aplicar filtros a conjuntos específicos.\n\n\nBUSCARX()\n=BUSCARX(A2, D:D, E:E)\nLa función BUSCARX es una herramienta potente para buscar y combinar datos de diferentes tablas. Permite realizar búsquedas en rangos específicos y devolver resultados de manera efectiva, especialmente si estas trabajando con dos tablas diferentes\n\n\n\n\n\nFunciones para la limpieza de los datos\n\n\n\n\n\n\n\n\nFunciones\nEjemplo\nDefinición operativa\n\n\n\n\nUNIQUE()\n=UNIQUE(A1:A100)\nPara obtener los valores únicos en un rango de datos\n\n\nSI(ESBLANCO())\n=IF(ESBLANCO(A1), “Valor por defecto”, A1)\nPara reemplazar valores nulos o vacíos\n\n\nNOMPROPIO (), MAYUSC () o MINUS ()\n=MAYUSC(A1)\nA veces, los datos pueden venir en diferentes formatos, como mayúsculas y minúsculas\n\n\nCONCATENAR()\n=CONCATENAR(A1; ” “; B1)\n=A1 & ” ” & B1\nPara combinar texto de diferentes celdas. La función inversa es SPLIT ()\n\n\nSI()\n=SI(A1 &gt; 100, “Alto”, “Bajo”)\nPermite ejecutar diferentes acciones basadas en condiciones.\n\n\nIFS()\n=IFS(A1 &gt; 100, “Alto”, A1 &gt; 50, “Medio”, A1 &lt;= 50, “Bajo”)\nMás eficaz para varias condiciones.\n\n\nSWITCH ()\n=SWITCH(A1, “Opción1”, “Resultado1”, “Opción2”, “Resultado2”, “Opción3”, “Resultado3”)\nCuando tenemos un número limitado de opciones, SWITCH() puede simplificar el código.\n\n\n\nEl uso de estas funciones es clave para la manipulación, el procesamiento y la transformación de los datos necesario para el armado de nuestro input.\nExisten muchas otras funciones posibles de utilizar en el entorno de Google Sheets. Las que presentamos en el presente módulo son esenciales para un manejo eficiente de los datos.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo3.html#section",
+    "href": "modulo3.html#section",
+    "title": "Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos",
+    "section": "",
+    "text": "Fuentes de Datos Combinados\nEn Looker Studio, combinar datos de diferentes fuentes puede ser útil para obtener un análisis más completo. Para ello, se utilizan SQL JOINS, que permiten unir tablas a partir de una relación común.\n\nINNER JOIN: Devuelve filas que tienen coincidencias en ambas tablas.\n\nLEFT JOIN: Devuelve todas las filas de la tabla izquierda y las coincidencias de la tabla derecha, mostrando NULL cuando no hay coincidencias.\n\nRIGHT JOIN: Devuelve todas las filas de la tabla derecha y las coincidencias de la tabla izquierda.\n\nFULL OUTER JOIN : Devuelve filas cuando hay una coincidencia en una de las tablas.\n\n\n\nCombinando Datos en Looker Studio\nEn Looker Studio podemos combinar datos sin escribir código por medio del editor de combinación. Esta combinación se compone de al menos dos tablas, y cinco tablas como máximo.\n\nTablas\nConfiguración de unión\nBotón Unirse a otra tabla\nNombre de la combinación\nDimensiones y métricas incluidas\nAgrega métricas, un período y filtros\nOpción Ocultar campos de unión repetidos y botón GUARDAR\n\nUna configuración de unión vincula pares de tablas en una combinación, que no son otra cosa que los diferentes tipos de JOINS que repasamos en SQL .",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Modulo 3. Fundamentos de Google Sheets para el procesamiento de datos</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html",
+    "href": "modulo4.html",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "",
+    "text": "Características para el diseño de un tablero efectivo para la vigilancia epidemiológica\nLos tableros (dashboards) en general, como vimos en modulos anteriores, son herramientas visuales que agrupan y presentan información clave de una manera accesible. Estas herramientas permiten sintetizar grandes volúmenes de datos en visualizaciones claras y concisas.\nEn el proceso de diseño, es importante tener en cuenta el plan de análisis donde se explicitan los objetivos, las desiciones metodológicas y los pasos operativos. Por ello antes de comenzar el diseño del tablero, es crucial entender qué se quiere lograr con él, ya que esto guiará el diseño y la selección de métricas (medidas de resumen) e indicadores.\nAlgunas de sus ventajas en el campo de la vigilancia:",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#características-para-el-diseño-de-un-tablero-efectivo-para-la-vigilancia-epidemiológica",
+    "href": "modulo4.html#características-para-el-diseño-de-un-tablero-efectivo-para-la-vigilancia-epidemiológica",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "",
+    "text": "Facilitan el monitoreo en tiempo real de los eventos de notificación obligatoria en salud\nFundamentales para la gestión sanitaria y la toma de desiciones informada\nSimplifican la comunicación de resultados",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#consideraciones-para-el-diseño",
+    "href": "modulo4.html#consideraciones-para-el-diseño",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "Consideraciones para el diseño",
+    "text": "Consideraciones para el diseño\nOrganizar la información es una clave fundamental. Debe disponerse de manera que los elementos más importantes estén al frente, utilizando un diseño jerárquico. Optimizar las visualizaciones es igualmente necesario; esto implica usar gráficos y tablas adecuadas para cada tipo de dato, como gráficos de líneas para mostrar tendencias temporales y gráficos de barras para comparaciones.\nA su vez, incluir elementos interactivos como filtros y segmentaciones permitirá a los usuarios explorar los datos de manera más profunda.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#principios-de-visualización-de-datos",
+    "href": "modulo4.html#principios-de-visualización-de-datos",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "Principios de visualización de datos",
+    "text": "Principios de visualización de datos\nLa efectividad en la visualización de datos puede guiarse por algunos principios clave. La carga cognitiva se refiere a la cantidad de esfuerzo mental que requiere procesar información nueva y compleja. En el contexto de la visualización de datos, una alta carga cognitiva puede dificultar la interpretación y comprensión de los gráficos.\n\nSimplicidad: Priorizar la claridad y evitar elementos innecesarios.\nConsistencia: Coherencia en el estilo (colores, fuentes y formatos).\nRelevancia: Razón de ser de acuerdo a los objetivos del plan de análisis.\nUso de los espacios: El espacio en blanco se debe aprovechar para separar y organizar los elementos.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#para-añadir-gráficos",
+    "href": "modulo4.html#para-añadir-gráficos",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "Para añadir gráficos",
+    "text": "Para añadir gráficos\nPara incluir gráficos en nuestro tablero, luego de haber ya incorporado las fuentes de datos, podemos realizarlo desde el menú de nuestro proyecto.\n\nComo paso previo a la selección de los gráficos y visualizaciones es fundamental comprender y clasificar nuestras variables (columnas de nuestas bases de datos). En líneas generales podemos clasificar cualquier tipo de variables como categóricas y numéricos. Los gráficos que utilicemos dependen de la clasificación de nuestras variables en Looker Studio.\nTe invitamos a explorar los gráficos disponibles en Looker Studio. Algunos de los mas utilizados en el campo de la vigilancia epidemiológica son:\n\nGráficos de Barras\n\nGráficos de Líneas\n\nGráficos Circular o Sectorial\n\nCuadro de resultados o de evaluación\n\nTablas de resumen\n\nMapas Coropléticos o temáticos",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#configuración-y-estilo",
+    "href": "modulo4.html#configuración-y-estilo",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "Configuración y estilo",
+    "text": "Configuración y estilo\nUna vez seleccionados los gráficos y las visualizaciones puede avanzarse en la configuración de cada gráfico y de su particular estilo que queremos darle. En el siguiente menú se presentan las opciones que podemos utilizar.\n\nDe acuedo al tipo de gráfico y de las variables seleccionadas podemos tener algunas diferencias. Sin embargo, en líneas generales estos son algunos de los elementos a tener en cuenta en la configuración.\n\nFuente de datos\n\nDimensión: Eje X\n\nMétrica: Eje Y\n\nFiltrar\n\nDimensión período\n\nOrdenar\n\n\nEn lo relativo al estilo del gráfico puede editarse distintos elementos fundamentales de cualquier gráfico: título, leyendas de los ejes, fondos y bordes, etc.\n\nTambién es posible añadir elementos de diseño estáticos en nuestro tablero. Estos elementos puede ayudar a organizar el espacio y facilitar la comprensión de las visualizaciones que utilicemos. A su vez puede colocarse links de acceso a otras páginas web que complementen la información que estamos presentando.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo4.html#maquetación-del-tablero",
+    "href": "modulo4.html#maquetación-del-tablero",
+    "title": "Modulo 4. Interfaz de Looker Studio y visualizaciones",
+    "section": "Maquetación del tablero",
+    "text": "Maquetación del tablero\nAdemás de la configuración de las visualizaciones y gráficos (incluyendo todos los elementos necesarios para su comprensión: título, leyendas, etc.), la selección de estilos a utilizar, es conveniente no perder de vista el diseño global del tablero.\n\nLa combinación de visualizaciones y el diseño debe realizarse de acuerdo a nuestros objetivos planteados en el plan de análisis.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Modulo 4. Interfaz de Looker Studio y visualizaciones</span>"
+    ]
+  },
+  {
+    "objectID": "modulo5.html",
+    "href": "modulo5.html",
+    "title": "Modulo 5.Integración, interactividad y configuración del tablero",
+    "section": "",
+    "text": "Controles y filtros para nuestro tablero\nLos filtros reducen los datos que se muestran a los lectores de informes. Como editor de informes, las propiedades de filtro nos permiten enfocar en los datos que mejor comunican la historia que deseas contar, lo que hace que tus informes sean más relevantes para tu público.\nPodemos aplicar un filtro a un gráfico, control, página o a todo el informe con la pestaña Recurso.\nA veces, las propiedades de los filtros se denominan filtros del editor, ya que los lectores de los informes no pueden cambiarlas. Solo los editores de informes pueden cambiar las propiedades de los filtros.\nA diferencia de los filtros, los controles permiten interactuar al usuario con los datos de las siguientes maneras:\nLos controles prefiguran la interacción que puede tener un usuario que visualiza nuestro tablero, en este sentido su configuración depende de la definición de público que va a visualizar. En este sentido en el campo de la salud no es lo mismo un tablero para el equipo de salud en el nivel asistencial, para un equipo de gestión sanitaria en un nivel central o para usuarios/as del sistema de salud o para todos al mismo tiempo.\nEsto debe estar definidio en nuestro plan de análisis, en la documentación de nuestro proyecto. Algunas preguntas que pueden orientarnos:",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Modulo 5.Integración, interactividad y configuración del tablero</span>"
+    ]
+  },
+  {
+    "objectID": "modulo5.html#controles-y-filtros-para-nuestro-tablero",
+    "href": "modulo5.html#controles-y-filtros-para-nuestro-tablero",
+    "title": "Modulo 5.Integración, interactividad y configuración del tablero",
+    "section": "",
+    "text": "Filtrar los datos por valores de dimensión específicos\nEstablece el período del informe.\nEstablecer valores de parámetros que luego se pueden usar en campos calculados o pasar de vuelta al conector\nCambiar el conjunto de datos subyacente que utiliza una fuente de datos\n\n\n\n\n\nIdentificación de público destinatario: ¿Quiénes son?\nExpectativas: ¿Qué buscan y qué esperan de nuestro tablero?\nObligaciones y protección de datos: ¿Qué derechos tienen? ¿Qué obligaciones tenemos con ellos? ¿Qué datos están protegidos y son sensibles?\nContexto: ¿Hay características contextuales que tenemos que tener en cuenta con respecto a la información sanitaria que estamos publicando?",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Modulo 5.Integración, interactividad y configuración del tablero</span>"
+    ]
+  },
+  {
+    "objectID": "modulo5.html#entornos-de-trabajo-colaborativo",
+    "href": "modulo5.html#entornos-de-trabajo-colaborativo",
+    "title": "Modulo 5.Integración, interactividad y configuración del tablero",
+    "section": "Entornos de Trabajo Colaborativo",
+    "text": "Entornos de Trabajo Colaborativo\nEn el desarrollo de nuestro tablero es importante tener en cuenta la necesidad de proteger la seguridad para proteger la calidad de los datos, la confidencialidad, integridad y disponibilidad de la información en salud.\nEn esta dirección, en entornos de trabajo colaborativo, es importante considerar los siguientes elementos e incorporarlos en nuestra guía operativa en el marco del plan de análisis:\n\nPermisos y Roles: Asignar permisos y roles adecuados a los miembros del equipo para garantizar que solo las personas autorizadas puedan acceder y modificar los archivos.\nCompartir Archivos: Compartir archivos solo con las personas que necesitan acceder a ellos, utilizando la función de “Compartir” en Google Drive y Looker Studio.\nEnlaces de Acceso: Utilizar enlaces de acceso seguros para compartir archivos, en lugar de enviar archivos adjuntos por correo electrónico.\nFecha de Expiración: Establecer una fecha de expiración para los enlaces de acceso, para garantizar que los archivos no sean accesibles después de un período determinado.\nNotificaciones: Configurar notificaciones para alertar a los miembros del equipo cuando se realicen cambios en los archivos compartidos.\nProtección de Hojas y Rangos de Planillas de Cálculo: Utilizar la función de “Proteger hoja” o “Proteger rango” en Google Sheets para restringir el acceso y la edición de ciertas áreas de la planilla.\nLimitaciones de Seguridad en Google Drive: Establecer limitaciones de seguridad en Google Drive, como: Restringir el acceso a archivos y carpetas específicas, y establecer permisos de edición y visualización para diferentes usuarios.",
+    "crumbs": [
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Modulo 5.Integración, interactividad y configuración del tablero</span>"
+    ]
+  }
+]

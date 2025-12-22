@@ -1,6 +1,6 @@
 ---
 title: "Modulo 1: Buenas prácticas en el desarrollo de proyectos.  "
-toc: false
+toc: True 
 df-print: paged
 smooth-scroll: true
 execute:
